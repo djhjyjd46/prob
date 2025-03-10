@@ -1,0 +1,51 @@
+.exam {
+    position: relative;
+    padding-top: 96px;
+    height: 795px;
+    background-image: url("/images/exam.png");
+    background-size: cover; // Заполняет весь контейнер без искажений
+    background-repeat: no-repeat; // Отключает повторение
+
+    h2 {
+        color: $white;
+        max-width: 662px;
+        margin-bottom: 50px;
+    }
+
+    img {
+        position: absolute;
+        top: 133px;
+        right: 208px;
+        width: 638px;
+        height: 638px;
+        border-radius: 50%;
+        border: solid $white 12px;
+        box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    p {
+        color: $white;
+        max-width: 662px;
+    }
+
+    ul {
+        max-width: 792px;
+        height: auto;
+        border-radius: 32px;
+        background-color: $white;
+        padding: 40px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+
+        li {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+    }
+}

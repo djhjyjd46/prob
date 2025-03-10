@@ -1,0 +1,27 @@
+@import "_reset";
+@import "_variables";
+
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+// Контейнер
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// Заголовки
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h2{
+font-weight: 400;
+font-size: 40px;
+line-height: 140%;
+}

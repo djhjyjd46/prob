@@ -1,0 +1,26 @@
+.header {
+    height: 88px;
+    
+    &__top {  
+          text-align: center;
+        display: flex;
+        max-width: 1200px;
+        height: 48px;
+        gap: 96px;
+        justify-content: center;
+    }
+
+    &__category {
+        width: 464px;
+        height: 31px;
+        gap: 48px;
+        display: flex;
+    }
+    ul{
+        display: flex;
+        gap: 48px;
+    }
+    &__contacts{
+        display: flex;
+    }
+}
