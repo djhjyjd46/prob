@@ -2,13 +2,13 @@
     position: relative;
     height: 898px;
     background-image: url("/images/advantages/advantages-bottom.png"), url("/images/advantages/advantages-top.png");
-    background-size: contain; 
+    background-size: contain;
     background-size: 450px 470px, 280px auto;
     background-position: bottom left, top right;
     background-repeat: no-repeat;
 
     &__img-top {
-        z-index: -1; 
+        z-index: -1;
         position: absolute;
         width: 280px;
         height: auto;
@@ -17,7 +17,7 @@
     }
 
     &__img-left {
-        z-index:-1; 
+        z-index: -1;
         position: absolute;
         width: 642px;
         height: 288px;

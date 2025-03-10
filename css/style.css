@@ -637,4 +637,109 @@ button {
 }
 .result .result__item {
   max-width: 100%;
+}
+
+.indications {
+  position: relative;
+  height: 860px;
+  background-image: url("/proba.bel/images/bg-indicator.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background: z-;
+}
+.indications h2 {
+  margin-bottom: 64px;
+  height: 196px;
+  vertical-align: middle;
+}
+.indications__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.indications__list li {
+  display: flex;
+  max-width: 371px;
+  padding: 32px 24px;
+  flex: 1 1 calc(33.333% - 24px);
+  height: 154px;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px 0px rgb(51, 51, 51);
+  flex-direction: column;
+  justify-content: space-between;
+}
+.indications__list li span {
+  font-size: 20px;
+  color: rgb(89, 157, 134);
+}
+.indications p {
+  max-width: 792px;
+}
+
+.know h2 {
+  text-align: center;
+}
+.know__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+.know__grid div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.know__grid svg {
+  min-width: 24px;
+}
+.know__grid div:nth-child(5) {
+  grid-column: 2;
+  grid-row: 1/5;
+  display: flex;
+  justify-content: center;
+}
+.know__grid div:nth-child(5) img {
+  max-width: 100%;
+  height: auto;
+}
+
+.faq__accordion {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.faq__accordion details {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+}
+.faq__accordion details summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.faq__accordion details summary svg {
+  transition: transform 0.3s ease;
+}
+.faq__accordion details[open] summary svg {
+  transform: rotate(180deg);
+}
+.faq__accordion details .faq__content {
+  padding: 10px;
+  font-size: 16px;
+  color: #666;
+}
+.faq__accordion details:last-child {
+  border-bottom: none;
 }/*# sourceMappingURL=style.css.map */
