@@ -1,0 +1,70 @@
+.advantages {
+    padding: 0;
+    position: relative;
+    height: 898px;
+    background-image: url("/proba.bel/images/advantages/advantages-bottom.png"), url("/proba.bel/images/advantages/advantages-top.png");
+    background-size: 458px auto, 642px auto;
+    background-position: bottom left, top right;
+    background-repeat: no-repeat;
+    margin-bottom: 64px;
+
+
+    .container {
+        margin-top: 123px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        .advantages__controls{
+            display: flex;
+            gap: 8px;
+        }
+    }
+
+    h2 {
+        max-height: 200px;
+        max-width: 537px;
+        text-align: center;
+        margin: 20px;
+    }
+
+    &__pag-adv {
+        display: flex;
+        gap: 12px;
+    }
+
+    ul {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__card {
+        color: $white;
+        position: relative;
+        width: 282px;
+        min-height: 362px;
+        background-color: $green;
+        border-radius: 24px;
+        padding: 56px 24px 30px;
+
+        h3 {
+            margin-bottom: 16px;
+        }
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: 0px;
+            width: 80px;
+            border: solid $white 12px;
+            height: 80px;
+            border-radius: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: translate(-50%, -50%);
+        }
+    }
+  
+}
