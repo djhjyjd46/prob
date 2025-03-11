@@ -707,6 +707,7 @@ button:hover {
   font-style: normal;
 }
 .advantages {
+  padding: 0;
   position: relative;
   height: 898px;
   background-image: url("/proba.bel/images/advantages/advantages-bottom.png"), url("/proba.bel/images/advantages/advantages-top.png");
@@ -885,8 +886,12 @@ button:hover {
   max-width: 792px;
 }
 
+.know {
+  margin-bottom: 64px;
+}
 .know h2 {
   text-align: center;
+  margin-bottom: 20px;
 }
 .know__grid {
   display: grid;
@@ -996,28 +1001,28 @@ button:hover {
   height: 80px;
 }
 .work__list div:nth-child(1) {
-  top: 190px;
-  left: -5%;
+  top: 15%;
+  left: 0;
 }
 .work__list div:nth-child(2) {
-  top: 372px;
-  left: 13%;
+  top: 40%;
+  left: 16%;
 }
 .work__list div:nth-child(3) {
-  top: 188px;
-  right: 46%;
+  top: 14%;
+  right: 49%;
 }
 .work__list div:nth-child(4) {
-  top: 365px;
-  right: 32%;
+  top: 39%;
+  right: 33%;
 }
 .work__list div:nth-child(5) {
-  bottom: 389px;
-  left: 62%;
+  bottom: 60%;
+  left: 63%;
 }
 .work__list div:nth-child(6) {
-  bottom: 188px;
-  left: 75%;
+  bottom: 29%;
+  left: 76.5%;
 }
 
 .custom-checkbox {
