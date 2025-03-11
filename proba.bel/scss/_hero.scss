@@ -1,16 +1,71 @@
 .hero {
     display: flex;
     align-items: center;
-    
     width: 100%;
     height: 824px;
+    position: relative;
+    overflow: hidden;
 
+
+    // Контейнер для слайдера
+    .swiper-container {
+        width: 100%;
+    }
+
+    // Стили для слайдов
+    &__slide {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // Стили для текстового блока
     &__text-block {
-
         width: 690px;
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 32px;
+            color: $black;
+        }
+
+        p {
+            font-size: 18px;
+            color: $black;
+        }
+    }
+
+    // Стили для изображения в слайде
+    .swiper-slide img {
+        max-width: 872px;
         height: auto;
     }
-    img{
-    
+
+    .hero__text-block {
+        width: 690px;
+        height: 302px;
+    }
+
+    // Стили для пагинации (точек)
+    .swiper-pagination {
+        position: absolute;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        background: transparent;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        svg circle {
+            opacity: 1;
+        }
     }
 }

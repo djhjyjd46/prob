@@ -35,6 +35,7 @@ body {
   font-size: 16px;
   line-height: 1.4;
   color: rgb(51, 51, 51);
+  background-color: rgb(247, 250, 249);
 }
 
 .container {
@@ -597,11 +598,55 @@ button:hover {
   align-items: center;
   width: 100%;
   height: 824px;
+  position: relative;
+  overflow: hidden;
+}
+.hero .swiper-container {
+  width: 100%;
+}
+.hero__slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .hero__text-block {
   width: 690px;
+}
+.hero__text-block h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: rgb(51, 51, 51);
+}
+.hero__text-block p {
+  font-size: 18px;
+  color: rgb(51, 51, 51);
+}
+.hero .swiper-slide img {
+  max-width: 872px;
   height: auto;
 }
+.hero .hero__text-block {
+  width: 690px;
+  height: 302px;
+}
+.hero .swiper-pagination {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.hero .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  background: transparent;
+  opacity: 1;
+}
+.hero .swiper-pagination-bullet-active svg circle {
+  opacity: 1;
+}
+
 @font-face {
   font-family: "IdealistSans";
   src: url("/proba.bel/fonts/IdealistSansRegular.otf") format("truetype");
