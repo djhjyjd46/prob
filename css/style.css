@@ -34,6 +34,7 @@ body {
   font-family: "IdealistSans", sans-serif;
   font-size: 16px;
   line-height: 1.4;
+  color: rgb(51, 51, 51);
 }
 
 .container {
@@ -476,6 +477,10 @@ button {
   justify-content: center;
   align-items: center;
   color: rgb(247, 250, 249);
+  font-size: 20px;
+}
+button:hover {
+  background-color: rgb(162, 192, 128);
 }
 
 .contact-form {
@@ -510,11 +515,81 @@ button {
 }
 .contact-form__conf {
   display: flex;
+  gap: 12px;
+  align-items: center;
   max-width: 668px;
 }
-.contact-form__conf span {
+.contact-form__conf a {
   color: rgb(162, 192, 128);
   text-decoration: underline;
+}
+
+.footer {
+  padding: 80px 0 72px;
+  background-color: rgb(51, 51, 51);
+  color: rgb(247, 250, 249);
+}
+.footer h3 {
+  font-size: 24px;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container .footer__logo {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 318px;
+}
+.footer .container .footer__logo img {
+  width: 216px;
+  height: 47px;
+}
+.footer .container .footer__logo .footer__links {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer .container .footer__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 18px;
+}
+.footer .container .footer__menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .container .footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer .container .footer__contacts div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-size: 18px;
+}
+.footer .container .footer__contacts .email {
+  gap: 16px;
+}
+.footer .container .footer__contacts .tel {
+  gap: 20px;
+}
+.footer .container .footer__contacts .footer__socials {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+.footer .container .footer__contacts .mess {
+  gap: 8px;
+}
+.footer .container .footer__contacts .footer__tel {
+  gap: 12px;
 }
 
 .hero {
@@ -529,7 +604,7 @@ button {
 }
 @font-face {
   font-family: "IdealistSans";
-  src: url("../fonts/IdealistSansRegular.otf") format("truetype");
+  src: url("/proba.bel/fonts/IdealistSansRegular.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -632,13 +707,22 @@ button {
   position: relative;
   max-width: 320px;
 }
+.result .result__grid .result__item h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
 .result .result__grid .result__item span {
+  opacity: 0.3;
+  margin: 0;
+  padding: 0;
+  line-height: 0.9;
   position: absolute;
   top: 0;
   left: 0;
   font-size: 96px;
   color: rgb(89, 157, 134);
   z-index: -1;
+  font-family: "IdealistSans", sans-serif;
 }
 .result .result__grid div:nth-child(3) {
   grid-column: 2/3;
@@ -706,7 +790,7 @@ button {
   height: 154px;
   justify-content: center;
   border-radius: 12px;
-  box-shadow: 0px 0px 20px 0px rgb(51, 51, 51);
+  box-shadow: 0px 0px 20px 0px rgba(51, 51, 51, 0.1);
   flex-direction: column;
   justify-content: space-between;
 }
@@ -851,4 +935,43 @@ button {
 .work__list div:nth-child(6) {
   bottom: 188px;
   left: 75%;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  color: rgb(247, 250, 249);
+  cursor: pointer;
+}
+.custom-checkbox input {
+  display: none;
+}
+.custom-checkbox span {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  border: 2px solid rgb(247, 250, 249);
+  border-radius: 3px;
+  margin-right: 8px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.custom-checkbox span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 6px;
+  height: 10px;
+  border-right: 2px solid rgb(247, 250, 249);
+  border-bottom: 2px solid rgb(247, 250, 249);
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.custom-checkbox input:checked + span {
+  background: transparent;
+}
+.custom-checkbox input:checked + span::before {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

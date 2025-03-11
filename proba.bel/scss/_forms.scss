@@ -32,8 +32,10 @@
     }
     &__conf{
         display: flex;
+        gap: 12px;
+        align-items: center;
         max-width: 668px;
-        span{
+        a{
            color: $light-green;
            text-decoration: underline;
         }
