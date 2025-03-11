@@ -851,6 +851,7 @@ button:hover {
   position: relative;
   height: 860px;
   overflow: hidden;
+  margin-bottom: 60px;
 }
 .indications::before {
   content: "";

@@ -1,9 +1,9 @@
 .indications {
     position: relative;
     height: 860px;
-    overflow: hidden; // Добавляем overflow: hidden для предотвращения выхода фона за пределы контейнера
+    overflow: hidden; 
+    margin-bottom: 60px;
     
-    // Добавляем псевдоэлемент для фоновых изображений с z-index
     &::before {
         content: "";
         position: absolute;
