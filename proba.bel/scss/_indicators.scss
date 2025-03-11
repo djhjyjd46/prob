@@ -5,6 +5,7 @@
     background-position: top right, top left;
     background-repeat: no-repeat;
     background-size: 540px auto, 350px auto;
+    z-index: -1;
 
     
 
@@ -20,6 +21,7 @@ vertical-align: middle;
         flex-wrap: wrap;
         gap: 24px;
         margin-bottom: 40px;
+        z-index: 5;
 
         li {
             display: flex;
