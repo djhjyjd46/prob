@@ -42,7 +42,7 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,7 +59,7 @@ h2 {
   position: relative;
   padding-top: 96px;
   height: 795px;
-  background-image: url("/images/exam.png");
+  background-image: url("/proba.bel/images/exam.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -136,27 +136,39 @@ button, input, textarea {
 
 .header {
   height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 250, 249);
 }
 .header__top {
-  text-align: center;
   display: flex;
+  align-items: center;
   max-width: 1200px;
-  height: 48px;
-  gap: 96px;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.header .logo {
+  height: 40px;
 }
 .header__category {
-  width: 464px;
-  height: 31px;
-  gap: 48px;
   display: flex;
+  align-items: center;
+  gap: 48px;
 }
-.header ul {
+.header__category ul {
   display: flex;
   gap: 48px;
+}
+.header__category ul li {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
 }
 .header__contacts {
   display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -478,7 +490,6 @@ button {
   justify-content: center;
   align-items: center;
   color: rgb(247, 250, 249);
-  font-size: 20px;
 }
 button:hover {
   background-color: rgb(162, 192, 128);
@@ -600,7 +611,8 @@ button:hover {
   height: 824px;
   position: relative;
   overflow: hidden;
-  background-color: #F7FAF9;
+  background-color: rgb(247, 250, 249);
+  margin-bottom: 64px;
 }
 .hero__static-image {
   position: absolute;
@@ -697,29 +709,14 @@ button:hover {
 .advantages {
   position: relative;
   height: 898px;
-  background-image: url("/images/advantages/advantages-bottom.png"), url("/images/advantages/advantages-top.png");
-  background-size: contain;
-  background-size: 450px 470px, 280px auto;
+  background-image: url("/proba.bel/images/advantages/advantages-bottom.png"), url("/proba.bel/images/advantages/advantages-top.png");
+  background-size: 458px auto, 642px auto;
   background-position: bottom left, top right;
   background-repeat: no-repeat;
-}
-.advantages__img-top {
-  z-index: -1;
-  position: absolute;
-  width: 280px;
-  height: auto;
-  top: 59px;
-  right: 0;
-}
-.advantages__img-left {
-  z-index: -1;
-  position: absolute;
-  width: 642px;
-  height: 288px;
-  bottom: 0;
-  left: 0;
+  margin-bottom: 64px;
 }
 .advantages .container {
+  margin-top: 123px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -767,6 +764,7 @@ button:hover {
 
 .result {
   position: relative;
+  margin-bottom: 64px;
 }
 .result .title {
   display: flex;
@@ -851,11 +849,10 @@ button:hover {
 .indications {
   position: relative;
   height: 860px;
-  background-image: url("/proba.bel/images/bg-indicator.png");
-  background-position: top right;
+  background-image: url("/proba.bel/images/bg-indicator.png"), url("/proba.bel/images/indicator.png");
+  background-position: top right, top left;
   background-repeat: no-repeat;
-  background-size: auto;
-  background: z-;
+  background-size: 540px auto, 350px auto;
 }
 .indications h2 {
   margin-bottom: 64px;

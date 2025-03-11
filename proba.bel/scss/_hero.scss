@@ -5,7 +5,8 @@
     height: 824px;
     position: relative;
     overflow: hidden;
-    background-color: #F7FAF9;
+    background-color: $white;
+    margin-bottom: 64px;
 
     // Статичное изображение в верхнем левом углу
     &__static-image {

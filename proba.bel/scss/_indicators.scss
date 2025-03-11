@@ -1,11 +1,12 @@
 .indications {
     position: relative;
     height: 860px;
-    background-image: url('/proba.bel/images/bg-indicator.png');
-    background-position: top right;
+    background-image: url('/proba.bel/images/bg-indicator.png'),url('/proba.bel/images/indicator.png');
+    background-position: top right, top left;
     background-repeat: no-repeat;
-    background-size: auto; 
-    background: z-;
+    background-size: 540px auto, 350px auto;
+
+    
 
     h2{
         margin-bottom: 64px;

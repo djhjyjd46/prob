@@ -1,26 +1,41 @@
 .header {
     height: 88px;
-    
-    &__top {  
-          text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+
+    &__top {
         display: flex;
+        align-items: center;
         max-width: 1200px;
-        height: 48px;
-        gap: 96px;
-        justify-content: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .logo {
+        height: 40px;
     }
 
     &__category {
-        width: 464px;
-        height: 31px;
+        display: flex;
+        align-items: center;
         gap: 48px;
-        display: flex;
+
+        ul {
+            display: flex;
+            gap: 48px;
+            li {
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
     }
-    ul{
+
+    &__contacts {
         display: flex;
-        gap: 48px;
-    }
-    &__contacts{
-        display: flex;
+        align-items: center;
+        gap: 20px;   
     }
 }

@@ -1,5 +1,6 @@
 .result {
     position: relative;
+    margin-bottom: 64px;
 
     .title {
         display: flex;
@@ -14,9 +15,6 @@
         margin-bottom: 64px;
     }
 
-
-
-
     .result__grid {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr; // Три колонки
@@ -29,10 +27,11 @@
         padding: 40px;
 
         .result__item {
-            h3{
+            h3 {
                 font-size: 24px;
                 margin-bottom: 12px;
             }
+
             position: relative;
             max-width: 320px;
 
