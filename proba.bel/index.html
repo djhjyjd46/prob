@@ -35,40 +35,54 @@
 
     </header>
     <section class="hero">
-            <!-- Добавляем основной контейнер Swiper -->
+        <!-- Статичное изображение на заднем плане -->
+        <div class="hero__bg-image">
+            <img src="./images/hero/left-bg.png" alt="Фон">
+        </div>
+        
+        <!-- Добавляем основной контейнер Swiper -->
             <div class="swiper hero-swiper">
                 <!-- Обертка для слайдов -->
                 <div class="swiper-wrapper">
                     <!-- Слайд 1 -->
                     <div class="swiper-slide hero__slide">
-                        <div class="hero__text-block">
-                            <h2>Повышаем урожайность <br> на основе агрохимического<br> обследования</h2>
-                            <p>Комплексный подход к обследованию почвы для максимального роста и здоровья ваших культур</p>
+                        <div class="hero__content">
+                            <div class="hero__text-block">
+                                <h2>Повышаем урожайность <br> на основе агрохимического<br> обследования</h2>
+                                <p>Комплексный подход к обследованию почвы для максимального роста и здоровья ваших культур</p>
+                            </div>
+                            <div class="hero__image">
+                                <img src="/proba.bel/images/hero/slide-1.png">
+                            </div>
                         </div>
-                        <img src="/proba.bel/images/hero/slide-1.png">
                     </div>
                     <!-- Слайд 2 -->
                     <div class="swiper-slide hero__slide">
-                        <div class="hero__text-block">
-                            <h2>Продуктивность поля начинается с анализов</h2>
-                            <p>Точные данные для эффективных агрономических решений!</p>
+                        <div class="hero__content">
+                            <div class="hero__text-block">
+                                <h2>Продуктивность поля начинается с анализов</h2>
+                                <p>Точные данные для эффективных агрономических решений!</p>
+                            </div>
+                            <div class="hero__image">
+                                <img src="/proba.bel/images/hero/slide-2.png">
+                            </div>
                         </div>
-                        <img src="/proba.bel/images/hero/slide-2.png">
                     </div>
                     <!-- Слайд 3 -->
                     <div class="swiper-slide hero__slide">
-                        <div class="hero__text-block">
-                            <h2>Ваше поле может быть больше</h2>
-                            <p>Достигайте больших результатов с меньшими затратами!</p>
+                        <div class="hero__content">
+                            <div class="hero__text-block">
+                                <h2>Ваше поле может быть больше</h2>
+                                <p>Достигайте больших результатов с меньшими затратами!</p>
+                            </div>
+                            <div class="hero__image">
+                                <img src="/proba.bel/images/hero/slide-3.png">
+                            </div>
                         </div>
-                        <img src="/proba.bel/images/hero/slide-3.png">
-                    </div>
-                </div>
-                
+                    </div>               
                 <!-- Пагинация (точки) -->
                 <div class="swiper-pagination hero-pagination"></div>
-            
-            
+            </div>
         </div>
     </section>
     <section class="exam">
@@ -478,7 +492,7 @@
     </section>
     <section class="contact-form">
         <div class="container">
-            <h2>Интересуетесь, но сомневаетесь?</h2>
+            <h2>Интересуетесь,<br>но сомневаетесь?</h2>
             <form action="">
                 <input type="text" placeholder="Ваше имя" required>
                 <input type="tel" placeholder="+375 (__) ___-__-__" required>
@@ -610,7 +624,7 @@
             spaceBetween: 30,
             loop: true,
             autoplay: {
-                delay: 5000,
+                delay: 50000,
                 disableOnInteraction: false,
             },
             effect: 'fade',
