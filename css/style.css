@@ -492,7 +492,7 @@ button {
   color: rgb(247, 250, 249);
 }
 button:hover {
-  background-color: rgb(162, 192, 128);
+  background-color: rgb(52, 111, 92);
 }
 
 .contact-form {
@@ -733,9 +733,17 @@ button:hover {
   display: flex;
   gap: 12px;
 }
-.advantages ul {
+.advantages .swiper {
+  width: 100%;
+  padding: 30px 0 0;
+}
+.advantages .swiper-wrapper {
   display: flex;
-  gap: 24px;
+}
+.advantages .swiper-slide {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .advantages__card {
   color: rgb(247, 250, 249);
@@ -786,7 +794,6 @@ button:hover {
   justify-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px;
 }
 .result .result__grid .result__item {
   position: relative;

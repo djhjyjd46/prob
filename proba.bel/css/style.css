@@ -59,7 +59,7 @@ h2 {
   position: relative;
   padding-top: 96px;
   height: 795px;
-  background-image: url("/proba.bel/images/exam.png");
+  background-image: url("../");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -497,7 +497,7 @@ button:hover {
 
 .contact-form {
   height: 437px;
-  background-image: url("/proba.bel/images/form-bg.png");
+  background-image: url("./images/form-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   color: rgb(247, 250, 249);
@@ -702,7 +702,7 @@ button:hover {
 
 @font-face {
   font-family: "IdealistSans";
-  src: url("/proba.bel/fonts/IdealistSansRegular.otf") format("truetype");
+  src: url("./fonts/IdealistSansRegular.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -710,7 +710,7 @@ button:hover {
   padding: 0;
   position: relative;
   height: 898px;
-  background-image: url("/proba.bel/images/advantages/advantages-bottom.png"), url("/proba.bel/images/advantages/advantages-top.png");
+  background-image: url("./images/advantages/advantages-bottom.png"), url("./images/advantages/advantages-top.png");
   background-size: 458px auto, 642px auto;
   background-position: bottom left, top right;
   background-repeat: no-repeat;
@@ -851,6 +851,7 @@ button:hover {
   position: relative;
   height: 860px;
   overflow: hidden;
+  margin-bottom: 60px;
 }
 .indications::before {
   content: "";
@@ -859,7 +860,7 @@ button:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/proba.bel/images/bg-indicator.png"), url("/proba.bel/images/indicator.png");
+  background-image: url("./images/bg-indicator.png"), url("./images/indicator.png");
   background-position: top right, top left;
   background-repeat: no-repeat;
   background-size: 540px auto, 350px auto;
@@ -976,7 +977,7 @@ button:hover {
 .work {
   padding: 80px 0;
   position: relative;
-  background-image: url("/proba.bel/images/work-bg.png");
+  background-image: url("./images/work-bg.png");
   width: 100%;
   height: 737px;
   background-size: cover;
