@@ -29,6 +29,9 @@
             width: 282px;
             height: 64px;
         }
+        @media (max-width: 390px) {
+          flex-direction: column;
+        }
     }
     &__conf{
         display: flex;

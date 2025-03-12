@@ -6,24 +6,39 @@
     background-size: cover; // Заполняет весь контейнер без искажений
     background-repeat: no-repeat; // Отключает повторение
 
+    @media (max-width: 390px) {
+        height: 1073px;
+        padding: 48px 10px;
+        display: flex;
+        flex-direction: column;
+        background-image: url("/proba.bel/images/exam-mobile.png");
+    }
+
     h2 {
         color: $white;
         max-width: 662px;
         margin-bottom: 50px;
+        height: auto
     }
 
-    img {
+    .exam__image {
         position: absolute;
         top: 133px;
         right: 208px;
-        width: 638px;
-        height: 638px;
+
         border-radius: 50%;
         border: solid $white 12px;
         box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+
+        @media (max-width: 390px) {
+            position: static;            
+            width: 320px;
+            height: 320px;
+        }
+
     }
 
     p {

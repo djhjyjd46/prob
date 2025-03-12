@@ -4,7 +4,7 @@ const heroSwiper = new Swiper('.hero-swiper', {
     spaceBetween: 30,
     loop: true,
     autoplay: {
-        delay: 4000,
+        delay: 400000,
         disableOnInteraction: false,
     },
     effect: 'fade',

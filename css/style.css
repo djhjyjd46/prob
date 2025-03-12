@@ -31,6 +31,11 @@ button, input, textarea {
   background: none;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   font-family: "IdealistSans", sans-serif;
   font-size: 16px;
@@ -45,15 +50,24 @@ body {
   margin: 0 auto;
   padding: 0;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
+@media (max-width: 390px) {
+  .container {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 h2 {
   font-weight: 400;
   font-size: 40px;
   line-height: 140%;
+}
+@media (max-width: 390px) {
+  h2 {
+    font-size: 24px;
+  }
 }
 
 .exam {
@@ -64,23 +78,38 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 390px) {
+  .exam {
+    height: 1073px;
+    padding: 48px 10px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("/proba.bel/images/exam-mobile.png");
+  }
+}
 .exam h2 {
   color: rgb(247, 250, 249);
   max-width: 662px;
   margin-bottom: 50px;
+  height: auto;
 }
-.exam img {
+.exam .exam__image {
   position: absolute;
   top: 133px;
   right: 208px;
-  width: 638px;
-  height: 638px;
   border-radius: 50%;
   border: solid rgb(247, 250, 249) 12px;
   box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (max-width: 390px) {
+  .exam .exam__image {
+    position: static;
+    width: 320px;
+    height: 320px;
+  }
 }
 .exam p {
   color: rgb(247, 250, 249);
@@ -542,6 +571,11 @@ button:hover {
   width: 282px;
   height: 64px;
 }
+@media (max-width: 390px) {
+  .contact-form form {
+    flex-direction: column;
+  }
+}
 .contact-form__conf {
   display: flex;
   gap: 12px;
@@ -645,6 +679,11 @@ button:hover {
   height: 100%;
   z-index: 1;
 }
+@media (max-width: 390px) {
+  .hero__bg-image {
+    display: none;
+  }
+}
 .hero__bg-image img {
   position: absolute;
   top: 0;
@@ -674,6 +713,11 @@ button:hover {
   align-items: center;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 390px) {
+  .hero__content {
+    flex-direction: column;
+  }
 }
 .hero__text-block {
   max-width: 563px;
@@ -733,6 +777,11 @@ button:hover {
   background-repeat: no-repeat;
   margin-bottom: 64px;
 }
+@media (max-width: 390px) {
+  .advantages .advantages__pag-adv {
+    display: none;
+  }
+}
 .advantages .container {
   margin-top: 123px;
   display: flex;
@@ -752,7 +801,7 @@ button:hover {
 }
 .advantages .swiper {
   width: 100%;
-  padding: 30px 0 0;
+  padding: 50px 0 0;
 }
 .advantages .swiper-wrapper {
   display: flex;
@@ -770,6 +819,12 @@ button:hover {
   background-color: rgb(89, 157, 134);
   border-radius: 24px;
   padding: 56px 24px 30px;
+}
+@media (max-width: 390px) {
+  .advantages__card {
+    width: 340px;
+    min-height: 342px;
+  }
 }
 .advantages__card h3 {
   margin-bottom: 16px;

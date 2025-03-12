@@ -9,9 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         breakpoints: {
             // когда ширина экрана >= 576px
-            576: {
-                slidesPerView: 2,
-                spaceBetween: 20
+            390: {
+                slidesPerView: 1,
             },
             // когда ширина экрана >= 768px
             768: {
