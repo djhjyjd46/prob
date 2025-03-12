@@ -1,42 +1,52 @@
-.faq{
-    padding: 64px 0;
+.faq {
+    height: 855px;
+
+    h2 {
+        margin-top: 110px;
+        margin-bottom: 77px;
+    }
 
     &__accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
         width: auto;
         margin: 0 auto;
-        border-radius: 5px;
-        overflow: hidden;
-    
+
         details {
-            box-shadow: 2px 4px 12px 0px rgba(51, 51, 51, 0.15);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
             padding: 20px;
             cursor: pointer;
+            border-radius: 8px;
 
-    
+
+
             summary {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
 
-                span{                    
+                span {
                     font-size: 20px;
                     margin-bottom: 12px;
-               }
-                svg {                   
+                }
+
+                svg {
                     transition: transform 0.3s ease;
                 }
 
             }
-    
+
             &[open] summary svg {
-                transform: rotate(180deg);
+                transform: rotate(-90deg);
             }
-    
+
             .faq__content {
                 font-size: 18px;
             }
         }
-    
+
         details:last-child {
             border-bottom: none;
         }

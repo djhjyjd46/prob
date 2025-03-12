@@ -1,6 +1,6 @@
 .result {
     position: relative;
-    margin-bottom: 64px;
+    margin-bottom: 129px;
 
     .title {
         display: flex;
@@ -12,15 +12,15 @@
         max-width: 513px;
         max-height: 196px;
         text-align: center;
-        margin-bottom: 64px;
+        margin-bottom: 114px;
     }
 
     .result__grid {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr; // Три колонки
         grid-template-rows: repeat(2, auto); // Две строки
-        gap: 136px 60px;
-        align-items: center;
+        gap: 104px 60px;
+        align-items: start;
         justify-items: center;
         max-width: 1200px;
         margin: 0 auto;

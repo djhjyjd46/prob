@@ -1,0 +1,63 @@
+// // Стили для мобильного меню
+// .mobile-menu {
+//   display: none; // Скрыть меню по умолчанию
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: $white;
+//   z-index: 1000;
+//   overflow-y: auto;
+//   padding: 20px;
+
+//   &__close {
+//     position: absolute;
+//     top: 20px;
+//     right: 20px;
+//     font-size: 24px;
+//     cursor: pointer;
+//   }
+
+//   &__list {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+
+//     &__item {
+//       margin-bottom: 20px;
+
+//       &__link {
+//         text-decoration: none;
+//         font-size: 18px;
+//         color: $black;
+//       }
+//     }
+//   }
+// }
+
+// // Кнопка для открытия мобильного меню
+// .mobile-menu-button {
+//   display: none;
+//   position: fixed;
+//   top: 20px;
+//   right: 20px;
+//   z-index: 1001;
+//   font-size: 24px;
+//   cursor: pointer;
+// }
+
+// // Медиа-запросы для отображения мобильного меню
+// @media (max-width: 768px) {
+//   .mobile-menu-button {
+//     display: block;
+//   }
+
+//   .mobile-menu {
+//     display: block;
+//   }
+
+//   .desktop-menu {
+//     display: none;
+//   }
+// }

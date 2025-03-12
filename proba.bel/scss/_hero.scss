@@ -8,6 +8,20 @@
     background-color: $white;
     margin-bottom: 64px;
 
+    .hero__text-block {
+        position: relative;
+        top: -36px;
+        h2 {
+            font-size: 48px;
+            margin-bottom: 36px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    }
+
+
     // Статичное изображение в верхнем левом углу
     &__static-image {
         position: absolute;
@@ -61,13 +75,8 @@
         justify-content: flex-end;
         align-items: center;
         width: 100%;
-            margin: 0 auto;
-    }
-
-    // Стили для текстового блока
-    &__text-block {
-        max-width: 563px;
-
+        margin: 0 auto;
+        gap: 10px;
     }
 
     // Стили для изображения в слайде
@@ -88,15 +97,12 @@
         height: auto;
     }
 
-    .hero__text-block {
-        width: 569pxpx;
-        height: auto;
-    }
+
 
     // Стили для пагинации (точек)
     .swiper-pagination {
         position: absolute;
-        bottom: 20px;
+        bottom: 30px;
         left: 0;
         right: 0;
         display: flex;

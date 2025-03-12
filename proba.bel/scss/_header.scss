@@ -4,6 +4,25 @@
     justify-content: center;
     align-items: center;
     background-color: $white;
+    font-size: 18px;
+
+    @media (max-width: 390px) {
+        width: 100%;
+        height: 48px;
+
+        .logo {
+            width: 144px;
+            height: 32px;  
+        }
+        .header__category{
+            display: none;
+        }
+        .header__contacts{
+            display: none;
+        }
+
+
+    }
 
     &__top {
         display: flex;
@@ -14,7 +33,8 @@
     }
 
     .logo {
-        height: 40px;
+        height: 42px;
+        width: 191px;
     }
 
     &__category {
@@ -25,9 +45,8 @@
         ul {
             display: flex;
             gap: 48px;
+
             li {
-                font-size: 16px;
-                font-weight: 500;
                 cursor: pointer;
             }
         }
@@ -36,6 +55,6 @@
     &__contacts {
         display: flex;
         align-items: center;
-        gap: 20px;   
+        gap: 20px;
     }
 }

@@ -2,8 +2,9 @@
     margin-bottom: 64px;
      h2{
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 137px;
         }
+
     &__grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
@@ -12,7 +13,7 @@
         margin: 0 auto;
         align-items: center;
         
-     
+        padding-bottom: 5px;
     
         div {
             display: flex;
