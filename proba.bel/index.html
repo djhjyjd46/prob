@@ -23,9 +23,22 @@
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+375447188867">+375 (44) 718-88-67</a>
-                    <button type="button" class="header__contacts-button">Заказать звонок</button>
+                    <button id="openModalBtn" type="button" class="header__contacts-button">Заказать звонок</button>
                 </div>
             </div>
+            <!-- Кнопка для открытия мобильного меню -->
+<div class="mobile-menu-button" id="openMobileMenuBtn">&#9776;</div>
+
+<!-- Мобильное меню -->
+<div class="mobile-menu" id="mobileMenu">
+  <span class="mobile-menu__close" id="closeMobileMenuBtn">&times;</span>
+  <ul class="mobile-menu__list">
+    <li class="mobile-menu__list__item"><a href="#" class="mobile-menu__list__item__link">Главная</a></li>
+    <li class="mobile-menu__list__item"><a href="#" class="mobile-menu__list__item__link">О нас</a></li>
+    <li class="mobile-menu__list__item"><a href="#" class="mobile-menu__list__item__link">Услуги</a></li>
+    <li class="mobile-menu__list__item"><a href="#" class="mobile-menu__list__item__link">Контакты</a></li>
+  </ul>
+</div>
     </header>
     <section id="hero" class="hero">
         <!-- Статичное изображение на заднем плане -->
@@ -74,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Пагинация (точки) -->
                 <div class="swiper-pagination hero-pagination"></div>
             </div>
@@ -127,83 +140,97 @@
         </div>
     </section>
     <section id="advantages" class="advantages">
-    <div class="container">
-        <h2>Какие преимущества дает анализ почвы?</h2>
-        <div class="advantages__pag-adv advantages__pag">
-            <div class="advantages__left">
-                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <style>
-                      svg:hover circle {
-                        fill: #346F5C;
-                        transition: fill 0.3s ease;
-                      }
-                      svg:hover path {
-                        fill: #D1E7DD;
-                        transition: fill 0.3s ease;
-                      }
-                    </style>
-                    <circle cx="28" cy="28" r="28" fill="#599D86" />
-                    <path d="M31.3844 35.9543C31.6188 35.7199 31.7504 35.402 31.7504 35.0706C31.7504 34.7391 31.6188 34.4212 31.3844 34.1868L25.1969 27.9993L31.3844 21.8118C31.6121 21.5761 31.7381 21.2603 31.7353 20.9326C31.7324 20.6048 31.601 20.2913 31.3692 20.0596C31.1374 19.8278 30.8239 19.6963 30.4962 19.6935C30.1684 19.6906 29.8527 19.8166 29.6169 20.0443L22.5457 27.1156C22.3113 27.35 22.1797 27.6679 22.1797 27.9993C22.1797 28.3308 22.3113 28.6487 22.5457 28.8831L29.6169 35.9543C29.8513 36.1887 30.1692 36.3203 30.5007 36.3203C30.8321 36.3203 31.15 36.1887 31.3844 35.9543Z" fill="#F7FAF9" />
-                  </svg>
+        <div class="container">
+            <h2>Какие преимущества дает анализ почвы?</h2>
+            <div class="advantages__pag-adv advantages__pag">
+                <div class="advantages__left">
+                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <style>
+                            svg:hover circle {
+                                fill: #346F5C;
+                                transition: fill 0.3s ease;
+                            }
+
+                            svg:hover path {
+                                fill: #D1E7DD;
+                                transition: fill 0.3s ease;
+                            }
+                        </style>
+                        <circle cx="28" cy="28" r="28" fill="#599D86" />
+                        <path
+                            d="M31.3844 35.9543C31.6188 35.7199 31.7504 35.402 31.7504 35.0706C31.7504 34.7391 31.6188 34.4212 31.3844 34.1868L25.1969 27.9993L31.3844 21.8118C31.6121 21.5761 31.7381 21.2603 31.7353 20.9326C31.7324 20.6048 31.601 20.2913 31.3692 20.0596C31.1374 19.8278 30.8239 19.6963 30.4962 19.6935C30.1684 19.6906 29.8527 19.8166 29.6169 20.0443L22.5457 27.1156C22.3113 27.35 22.1797 27.6679 22.1797 27.9993C22.1797 28.3308 22.3113 28.6487 22.5457 28.8831L29.6169 35.9543C29.8513 36.1887 30.1692 36.3203 30.5007 36.3203C30.8321 36.3203 31.15 36.1887 31.3844 35.9543Z"
+                            fill="#F7FAF9" />
+                    </svg>
+                </div>
+                <div class="advantages__right advantages__pag">
+                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <style>
+                            svg:hover circle {
+                                fill: #346F5C;
+                                transition: fill 0.3s ease;
+                            }
+
+                            svg:hover path {
+                                fill: #D1E7DD;
+                                transition: fill 0.3s ease;
+                            }
+                        </style>
+                        <circle cx="28" cy="28" r="28" transform="rotate(-180 28 28)" fill="#599D86" />
+                        <path
+                            d="M24.6156 20.0457C24.3812 20.2801 24.2496 20.598 24.2496 20.9294C24.2496 21.2609 24.3812 21.5788 24.6156 21.8132L30.8031 28.0007L24.6156 34.1882C24.3879 34.4239 24.2619 34.7397 24.2647 35.0674C24.2676 35.3952 24.399 35.7087 24.6308 35.9404C24.8626 36.1722 25.1761 36.3037 25.5038 36.3065C25.8316 36.3094 26.1473 36.1834 26.3831 35.9557L33.4543 28.8844C33.6887 28.65 33.8203 28.3321 33.8203 28.0007C33.8203 27.6692 33.6887 27.3513 33.4543 27.1169L26.3831 20.0457C26.1487 19.8113 25.8308 19.6797 25.4993 19.6797C25.1679 19.6797 24.85 19.8113 24.6156 20.0457Z"
+                            fill="#F7FAF9" />
+                    </svg>
+                </div>
             </div>
-            <div class="advantages__right advantages__pag">
-                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <style>
-                        svg:hover circle {
-                          fill: #346F5C;
-                          transition: fill 0.3s ease;
-                        }
-                        svg:hover path {
-                          fill: #D1E7DD;
-                          transition: fill 0.3s ease;
-                        }
-                      </style>
-                    <circle cx="28" cy="28" r="28" transform="rotate(-180 28 28)" fill="#599D86" />
-                    <path d="M24.6156 20.0457C24.3812 20.2801 24.2496 20.598 24.2496 20.9294C24.2496 21.2609 24.3812 21.5788 24.6156 21.8132L30.8031 28.0007L24.6156 34.1882C24.3879 34.4239 24.2619 34.7397 24.2647 35.0674C24.2676 35.3952 24.399 35.7087 24.6308 35.9404C24.8626 36.1722 25.1761 36.3037 25.5038 36.3065C25.8316 36.3094 26.1473 36.1834 26.3831 35.9557L33.4543 28.8844C33.6887 28.65 33.8203 28.3321 33.8203 28.0007C33.8203 27.6692 33.6887 27.3513 33.4543 27.1169L26.3831 20.0457C26.1487 19.8113 25.8308 19.6797 25.4993 19.6797C25.1679 19.6797 24.85 19.8113 24.6156 20.0457Z" fill="#F7FAF9" />
-                </svg>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="advantages__card swiper-slide">
+                        <img src="./images/advantages/icons/icon-1.png" alt="">
+                        <h3>Определение идеальных культур</h3>
+                        <p>Анализ почвы помогает точно оценить, какие сельскохозяйственные культуры лучше всего подходят
+                            для успешного выращивания на конкретном поле, учитывая его уникальные физические и
+                            химические свойства</p>
+                    </div>
+                    <div class="advantages__card swiper-slide">
+                        <img src="./images/advantages/icons/icon-2.png" alt="">
+                        <h3>Определение идеальных культур</h3>
+                        <p>Определение содержания элементов в почве помогает понять, какие питательные вещества
+                            необходимо доба-
+                            вить или исключить. Это позволяет оптимизировать использование удобрений
+                            и повысить урожайность</p>
+                    </div>
+                    <div class="advantages__card swiper-slide">
+                        <img src="./images/advantages/icons/icon-3.png" alt="">
+                        <h3>Оптимизация питательных веществ</h3>
+                        <p>Для увеличения урожайности применяются анализ почвы, выбор сортов, эффективные системы
+                            удобрения и полива,
+                            а также современные агротехнические методы, улучшая рост и устойчивость растений</p>
+                    </div>
+                    <div class="advantages__card swiper-slide">
+                        <img src="./images/advantages/icons/icon-4.png" alt="">
+                        <h3>Схема повышения урожайности</h3>
+                        <p>Точное определение необ-ходимых питательных ве-ществ значительно оптими-зирует процессы
+                            удобрения и ухода за растениями, улучшая их рост, вкусовые характеристики и
+                            конкурен-тоспособность продукции</p>
+                    </div>
+                    <div class="advantages__card swiper-slide">
+                        <img src="./images/advantages/icons/icon-3.png" alt="">
+                        <h3>Оптимизация питательных веществ</h3>
+                        <p>Анализ почвы по малой сетке отбора (1-3 га) является основой
+                            для создания карт дифференцированного внесения удобрений, использование которых позволяет
+                            максимизировать прибыль с одного поля.</p>
+                    </div>
+                    <div class="advantages__card swiper-slide">
+                        <img src="./images/advantages/icons/icon-4.png" alt="">
+                        <h3>Схема повышения урожайности</h3>
+                        <p>Рассчитанные на базе анализа почвы нормы внесения удобрений позволят избежать их избыточного
+                            внесения
+                            и ненужных проходов техники по полю.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="advantages__card swiper-slide">
-                    <img src="./images/advantages/icons/icon-1.png" alt="">
-                    <h3>Определение идеальных культур</h3>
-                    <p>Анализ почвы помогает точно оценить, какие сельскохозяйственные культуры лучше всего подходят для успешного выращивания на конкретном поле, учитывая его уникальные физические и химические свойства</p>
-                </div>
-                <div class="advantages__card swiper-slide">
-                    <img src="./images/advantages/icons/icon-2.png" alt="">
-                    <h3>Определение идеальных культур</h3>
-                    <p>Определение содержания элементов в почве помогает понять, какие питательные вещества необходимо доба-
-                        вить или исключить. Это позволяет оптимизировать использование удобрений 
-                        и повысить урожайность</p>
-                </div>
-                <div class="advantages__card swiper-slide">
-                    <img src="./images/advantages/icons/icon-3.png" alt="">
-                    <h3>Оптимизация питательных веществ</h3>
-                    <p>Для увеличения урожайности применяются анализ почвы, выбор сортов, эффективные системы удобрения и полива, 
-                        а также современные агротехнические методы, улучшая рост и устойчивость растений</p>
-                </div>
-                <div class="advantages__card swiper-slide">
-                    <img src="./images/advantages/icons/icon-4.png" alt="">
-                    <h3>Схема повышения урожайности</h3>
-                    <p>Точное определение необ-ходимых питательных ве-ществ значительно оптими-зирует процессы удобрения и ухода за растениями, улучшая их рост, вкусовые характеристики и конкурен-тоспособность продукции</p>
-                </div>
-                <div class="advantages__card swiper-slide">
-                    <img src="./images/advantages/icons/icon-3.png" alt="">
-                    <h3>Оптимизация питательных веществ</h3>
-                    <p>Анализ почвы по малой сетке отбора (1-3 га) является основой 
-                        для создания карт дифференцированного внесения удобрений, использование которых позволяет максимизировать прибыль с одного поля.</p>
-                </div>
-                <div class="advantages__card swiper-slide">
-                    <img src="./images/advantages/icons/icon-4.png" alt="">
-                    <h3>Схема повышения урожайности</h3>
-                    <p>Рассчитанные на базе анализа почвы нормы внесения удобрений позволят избежать их избыточного внесения 
-                        и ненужных проходов техники по полю.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
     <section id="result" class="result">
         <div class="container">
             <div class="title">
@@ -676,11 +703,94 @@
             </div>
         </div>
     </footer>
-    <div class=""></div>
+    <div class="modal">
+        <div class="modal__content">
+            <a href="#close" class="modal__close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_72_1491)">
+                    <path d="M10 10L19 19M10 10L1 1M10 10L1 19M10 10L19 1" stroke="#777777" stroke-width="2"
+                        stroke-linecap="round" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_72_1491">
+                        <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg></a>
+            <h2>Политика конфиденциальности</h2>
+            <p>
+                Здесь содержится текст политики конфиденциальности. Вы можете добавить сюда любую информацию, 
+                связанную с защитой персональных данных пользователей.
+            </p>
+        </div>
+    </div>
+
+
+
+    <!-- Модальное окно -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_72_1491)">
+                        <path d="M10 10L19 19M10 10L1 1M10 10L1 19M10 10L19 1" stroke="#777777" stroke-width="2"
+                            stroke-linecap="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_72_1491">
+                            <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </span>
+            <div class="modal-phone">
+                <h2>Заказать звонок</h2>
+                <p>Оставьте Ваши контакты и наши специалисты свяжутся с вами</p>
+                <form action="">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="tel" placeholder="телефон">
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span></span>
+                        <p>Подтверждаю ознакомление с <a href="#">Политикой обработки персональных</a> данных и даю
+                            согласие
+                            на обработку моих персональных данных с целью осуществления обратного звонка</p>
+                    </label>
+                    <button class="header__contacts-button">Заказать звонок</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Получить элементы мобильного меню
+        var mobileMenu = document.getElementById("mobileMenu");
+        var openMobileMenuBtn = document.getElementById("openMobileMenuBtn");
+        var closeMobileMenuBtn = document.getElementById("closeMobileMenuBtn");
+        
+        // Когда пользователь нажимает на кнопку открытия, показать мобильное меню
+        openMobileMenuBtn.onclick = function() {
+          mobileMenu.style.display = "block";
+        }
+        
+        // Когда пользователь нажимает на кнопку закрытия, скрыть мобильное меню
+        closeMobileMenuBtn.onclick = function() {
+          mobileMenu.style.display = "none";
+        }
+        
+        // Когда пользователь нажимает в любом месте за пределами мобильного меню, скрыть его
+        window.onclick = function(event) {
+          if (event.target == mobileMenu) {
+            mobileMenu.style.display = "none";
+          }
+        }
+        </script>
+
+
     <script src="./js/swiper/swiper-bundle.min.js"></script>
     <script src="./js/modules/hero-slider.js"></script>
     <script src="./js/modules/smooth.js"></script>
     <script src="./js/modules/advantages-slider.js"></script>
+    <script src="./js/modules/modal-open.js"></script>
 
 </body>
 
