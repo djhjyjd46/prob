@@ -47,7 +47,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
+  font-weight: 400;
 }
 
 h2 {
@@ -561,6 +561,7 @@ button:hover {
 }
 .footer h3 {
   font-size: 24px;
+  margin-bottom: 7px;
 }
 .footer .container {
   display: flex;
@@ -588,10 +589,10 @@ button:hover {
   gap: 40px;
   font-size: 18px;
 }
-.footer .container .footer__menu ul {
+.footer .container .footer__menu div {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 17px;
 }
 .footer .container .footer__contacts {
   display: flex;
@@ -601,7 +602,7 @@ button:hover {
 .footer .container .footer__contacts div {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 23px;
   font-size: 18px;
 }
 .footer .container .footer__contacts .email {
@@ -968,7 +969,8 @@ button:hover {
 }
 
 .faq {
-  height: 855px;
+  max-height: 744px;
+  margin-bottom: 64px;
 }
 .faq h2 {
   margin-top: 110px;
@@ -1045,12 +1047,13 @@ button:hover {
 }
 .work__list div span {
   font-size: 18px;
+  margin-bottom: 10px;
 }
 .work__list div img {
   border: solid 12px rgb(89, 157, 134);
   background-color: rgb(89, 157, 134);
-  width: 80px;
-  height: 80px;
+  width: auto;
+  height: auto;
 }
 .work__list div:nth-child(1) {
   top: 15%;
