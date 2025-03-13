@@ -30,6 +30,10 @@ button, input, textarea {
   background: none;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "IdealistSans", sans-serif;
   line-height: 1.4;
@@ -43,11 +47,21 @@ body {
   margin: 0 auto;
   padding: 0;
 }
+@media (max-width: 700px) {
+  .container {
+    padding: 0 10px;
+  }
+}
 
 h2 {
   font-weight: 400;
   font-size: 40px;
   line-height: 140%;
+}
+@media (max-width: 700px) {
+  h2 {
+    font-size: 24px;
+  }
 }
 
 a:hover {
@@ -621,22 +635,23 @@ button:hover {
 @media (max-width: 700px) {
   .hero {
     flex-direction: column;
-    height: 100vh-;
+    height: 684px;
   }
 }
 .hero h2 {
   font-size: 2.5vw;
   margin-bottom: 50px;
 }
-@media (max-width: 390px) {
+@media (max-width: 700px) {
   .hero h2 {
+    margin: 56px 0 16px;
     font-size: 24px;
   }
 }
 .hero p {
   font-size: 1.25vw;
 }
-@media (max-width: 390px) {
+@media (max-width: 700px) {
   .hero p {
     font-size: 16px;
   }
@@ -687,13 +702,14 @@ button:hover {
 @media (max-width: 700px) {
   .hero__content {
     flex-direction: column;
+    gap: 56px;
   }
 }
 .hero__text-block {
   max-width: 690px;
   margin-left: 150px;
 }
-@media (max-width: 390px) {
+@media (max-width: 700px) {
   .hero__text-block {
     margin: 0;
   }
@@ -824,6 +840,12 @@ button:hover {
   max-width: 1200px;
   margin: 0 auto;
 }
+@media (max-width: 700px) {
+  .result .result__grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .result .result__grid .result__item {
   position: relative;
   max-width: 320px;
@@ -918,6 +940,12 @@ button:hover {
   gap: 24px;
   margin-bottom: 40px;
 }
+@media (max-width: 700px) {
+  .indications__list {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .indications__list li {
   display: flex;
   max-width: 371px;
@@ -930,6 +958,12 @@ button:hover {
   flex-direction: column;
   justify-content: space-between;
   background-color: rgb(247, 250, 249);
+}
+@media (max-width: 700px) {
+  .indications__list li {
+    flex-direction: column;
+    max-width: 100%;
+  }
 }
 .indications__list li span {
   font-size: 20px;
@@ -953,6 +987,12 @@ button:hover {
   max-width: 1200px;
   margin: 0 auto;
   align-items: center;
+}
+@media (max-width: 700px) {
+  .know__grid {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .know__grid div {
   display: flex;
@@ -1043,6 +1083,11 @@ button:hover {
   max-width: 240px;
   height: auto;
   text-align: center;
+}
+@media (max-width: 390px) {
+  .work__list div {
+    position: static;
+  }
 }
 .work__list div span {
   font-size: 18px;

@@ -1,5 +1,8 @@
 @import "_reset";
 @import "_variables";
+html, body {
+  overflow-x: hidden;
+}
 
 body {
   font-family: $font-family;
@@ -7,14 +10,18 @@ body {
   line-height: $line-height;
   color: $black;
   background-color: $white;
-}
+  
 
+}
 // Контейнер
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
+  @media (max-width: 700px) {
+    padding: 0 10px;
+  }
 }
 
 // Заголовки
@@ -23,6 +30,9 @@ h2{
 font-weight: 400;
 font-size: 40px;
 line-height: 140%;
+@media (max-width: 700px) {
+  font-size: 24px;
+}
 }
 
 a {

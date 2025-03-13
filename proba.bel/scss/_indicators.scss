@@ -32,11 +32,20 @@
     
     &__list {
         display: flex;
+        @media (max-width: 700px) {
+            flex-direction: column;
+            width: 100%;
+        }
         flex-wrap: wrap;
         gap: 24px;
         margin-bottom: 40px;
 
         li {
+            @media (max-width: 700px) {
+                flex-direction: column;
+                max-width: 100%;
+
+            }
             display: flex;
             max-width: 371px;
             padding: 32px 24px;

@@ -26,6 +26,9 @@
     }
 
     &__list div {
+        @media (max-width: 390px) {
+          position: static;
+        }
         display: flex;        
         flex-direction: column;
         align-items: center;
