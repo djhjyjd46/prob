@@ -7,10 +7,14 @@ document.addEventListener('DOMContentLoaded', function() {
             nextEl: '.advantages__right',
             prevEl: '.advantages__left',
         },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
         breakpoints: {
-            // когда ширина экрана >= 576px
-            576: {
-                slidesPerView: 2,
+            // когда ширина экрана >= 390px
+            390: {
+                slidesPerView: 1,
                 spaceBetween: 20
             },
             // когда ширина экрана >= 768px

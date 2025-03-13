@@ -55,6 +55,11 @@ h2 {
   font-size: 40px;
   line-height: 140%;
 }
+@media (max-width: 390px) {
+  h2 {
+    font-size: 24px;
+  }
+}
 
 .exam {
   position: relative;
@@ -63,6 +68,12 @@ h2 {
   background-image: url("/proba.bel/images/exam.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (max-width: 390px) {
+  .exam {
+    background-image: url("/proba.bel/images/exam-mobilebg.png");
+    min-height: 1073px;
+  }
 }
 .exam h2 {
   color: rgb(247, 250, 249);
@@ -146,17 +157,6 @@ button, input, textarea {
 }
 @media (max-width: 390px) {
   .header {
-    width: 100%;
-    height: 48px;
-  }
-  .header .logo {
-    width: 144px;
-    height: 32px;
-  }
-  .header .header__category {
-    display: none;
-  }
-  .header .header__contacts {
     display: none;
   }
 }
@@ -633,9 +633,16 @@ button:hover {
   background-color: rgb(247, 250, 249);
   margin-bottom: 64px;
 }
+@media (max-width: 390px) {
+  .hero {
+    min-height: 360px;
+  }
+}
 .hero .hero__text-block {
   position: relative;
+  margin: 0 0 0 168px;
   top: -36px;
+  max-width: 690px;
 }
 .hero .hero__text-block h2 {
   font-size: 48px;
@@ -644,11 +651,15 @@ button:hover {
 .hero .hero__text-block p {
   font-size: 24px;
 }
-.hero__static-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
+@media (max-width: 390px) {
+  .hero .hero__text-block h2 {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .hero .hero__text-block p {
+    font-size: 16px;
+  }
 }
 .hero__bg-image {
   position: absolute;
@@ -666,6 +677,11 @@ button:hover {
   width: auto;
   -o-object-fit: contain;
      object-fit: contain;
+}
+@media (max-width: 390px) {
+  .hero__bg-image {
+    display: none;
+  }
 }
 .hero .swiper {
   width: 100%;
@@ -689,20 +705,43 @@ button:hover {
   margin: 0 auto;
   gap: 10px;
 }
+@media (max-width: 390px) {
+  .hero__content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+}
+.hero .hero__image img {
+  width: 100%;
+  min-width: 550px;
+  height: auto;
+}
 .hero__image {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 .hero__image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media (max-width: 390px) {
+  .hero__image img {
+    width: 100%;
+    height: auto;
+  }
+}
 .hero .swiper-slide img {
-  max-width: 872px;
+  max-width: 100%;
   height: auto;
+}
+@media (max-width: 390px) {
+  .hero .swiper-slide img {
+    max-width: 100%;
+  }
 }
 .hero .swiper-pagination {
   position: absolute;

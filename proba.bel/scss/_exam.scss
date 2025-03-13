@@ -6,6 +6,10 @@
     background-size: cover; // Заполняет весь контейнер без искажений
     background-repeat: no-repeat; // Отключает повторение
 
+    @media (max-width: 390px) {
+    background-image: url("/proba.bel/images/exam-mobilebg.png");
+     min-height: 1073px;;     
+    }
     h2 {
         color: $white;
         max-width: 662px;

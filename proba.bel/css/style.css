@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +47,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
+  font-weight: 400;
 }
 
 h2 {
@@ -59,23 +60,23 @@ h2 {
   position: relative;
   padding-top: 96px;
   height: 795px;
-  background-image: url("../");
+  background-image: url("");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .exam h2 {
   color: rgb(247, 250, 249);
   max-width: 662px;
-  margin-bottom: 50px;
+  margin-bottom: 42px;
 }
 .exam img {
   position: absolute;
   top: 133px;
   right: 208px;
-  width: 638px;
-  height: 638px;
+  width: 650px;
+  height: 650px;
   border-radius: 50%;
-  border: solid rgb(247, 250, 249) 12px;
+  border: solid rgb(247, 250, 249) 5px;
   box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-repeat: no-repeat;
@@ -83,7 +84,7 @@ h2 {
 }
 .exam p {
   color: rgb(247, 250, 249);
-  max-width: 662px;
+  font-size: 24px;
 }
 .exam ul {
   max-width: 792px;
@@ -97,6 +98,7 @@ h2 {
   margin-bottom: 30px;
 }
 .exam ul li {
+  font-size: 20px;
   display: flex;
   gap: 16px;
   align-items: center;
@@ -140,6 +142,23 @@ button, input, textarea {
   justify-content: center;
   align-items: center;
   background-color: rgb(247, 250, 249);
+  font-size: 18px;
+}
+@media (max-width: 390px) {
+  .header {
+    width: 100%;
+    height: 48px;
+  }
+  .header .logo {
+    width: 144px;
+    height: 32px;
+  }
+  .header .header__category {
+    display: none;
+  }
+  .header .header__contacts {
+    display: none;
+  }
 }
 .header__top {
   display: flex;
@@ -149,7 +168,8 @@ button, input, textarea {
   justify-content: space-between;
 }
 .header .logo {
-  height: 40px;
+  height: 42px;
+  width: 191px;
 }
 .header__category {
   display: flex;
@@ -161,8 +181,6 @@ button, input, textarea {
   gap: 48px;
 }
 .header__category ul li {
-  font-size: 16px;
-  font-weight: 500;
   cursor: pointer;
 }
 .header__contacts {
@@ -492,12 +510,12 @@ button {
   color: rgb(247, 250, 249);
 }
 button:hover {
-  background-color: rgb(162, 192, 128);
+  background-color: rgb(52, 111, 92);
 }
 
 .contact-form {
   height: 437px;
-  background-image: url("./images/form-bg.png");
+  background-image: url("../images/form-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   color: rgb(247, 250, 249);
@@ -543,6 +561,7 @@ button:hover {
 }
 .footer h3 {
   font-size: 24px;
+  margin-bottom: 7px;
 }
 .footer .container {
   display: flex;
@@ -570,10 +589,10 @@ button:hover {
   gap: 40px;
   font-size: 18px;
 }
-.footer .container .footer__menu ul {
+.footer .container .footer__menu div {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 17px;
 }
 .footer .container .footer__contacts {
   display: flex;
@@ -583,7 +602,7 @@ button:hover {
 .footer .container .footer__contacts div {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 23px;
   font-size: 18px;
 }
 .footer .container .footer__contacts .email {
@@ -613,6 +632,17 @@ button:hover {
   overflow: hidden;
   background-color: rgb(247, 250, 249);
   margin-bottom: 64px;
+}
+.hero .hero__text-block {
+  position: relative;
+  top: -36px;
+}
+.hero .hero__text-block h2 {
+  font-size: 48px;
+  margin-bottom: 36px;
+}
+.hero .hero__text-block p {
+  font-size: 24px;
 }
 .hero__static-image {
   position: absolute;
@@ -657,9 +687,7 @@ button:hover {
   align-items: center;
   width: 100%;
   margin: 0 auto;
-}
-.hero__text-block {
-  max-width: 563px;
+  gap: 10px;
 }
 .hero__image {
   display: flex;
@@ -676,13 +704,9 @@ button:hover {
   max-width: 872px;
   height: auto;
 }
-.hero .hero__text-block {
-  width: 569pxpx;
-  height: auto;
-}
 .hero .swiper-pagination {
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   left: 0;
   right: 0;
   display: flex;
@@ -702,7 +726,7 @@ button:hover {
 
 @font-face {
   font-family: "IdealistSans";
-  src: url("./fonts/IdealistSansRegular.otf") format("truetype");
+  src: url("../images/fonts/IdealistSansRegular.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -710,32 +734,40 @@ button:hover {
   padding: 0;
   position: relative;
   height: 898px;
-  background-image: url("./images/advantages/advantages-bottom.png"), url("./images/advantages/advantages-top.png");
+  background-image: url("../images/images/advantages/advantages-bottom.png"), url("../images/images/advantages/advantages-top.png");
   background-size: 458px auto, 642px auto;
   background-position: bottom left, top right;
   background-repeat: no-repeat;
   margin-bottom: 64px;
 }
 .advantages .container {
-  margin-top: 123px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
 }
 .advantages h2 {
+  margin-bottom: 72px;
   max-height: 200px;
   max-width: 537px;
   text-align: center;
-  margin: 20px;
 }
 .advantages__pag-adv {
   display: flex;
   gap: 12px;
 }
-.advantages ul {
+.advantages .swiper {
+  width: 100%;
+  padding: 30px 0 0;
+}
+.advantages .swiper-wrapper {
   display: flex;
-  gap: 24px;
+}
+.advantages .swiper-slide {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .advantages__card {
   color: rgb(247, 250, 249);
@@ -765,7 +797,7 @@ button:hover {
 
 .result {
   position: relative;
-  margin-bottom: 64px;
+  margin-bottom: 129px;
 }
 .result .title {
   display: flex;
@@ -775,18 +807,17 @@ button:hover {
   max-width: 513px;
   max-height: 196px;
   text-align: center;
-  margin-bottom: 64px;
+  margin-bottom: 114px;
 }
 .result .result__grid {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: repeat(2, auto);
-  gap: 136px 60px;
-  align-items: center;
+  gap: 104px 60px;
+  align-items: start;
   justify-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px;
 }
 .result .result__grid .result__item {
   position: relative;
@@ -851,7 +882,10 @@ button:hover {
   position: relative;
   height: 860px;
   overflow: hidden;
-  margin-bottom: 60px;
+  margin-bottom: 64px;
+}
+.indications h2 {
+  margin-bottom: 138px;
 }
 .indications::before {
   content: "";
@@ -860,7 +894,7 @@ button:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./images/bg-indicator.png"), url("./images/indicator.png");
+  background-image: url("../images/images/bg-indicator.png"), url("../images/images/indicator.png");
   background-position: top right, top left;
   background-repeat: no-repeat;
   background-size: 540px auto, 350px auto;
@@ -870,11 +904,6 @@ button:hover {
 .indications .container {
   position: relative;
   z-index: 1;
-}
-.indications h2 {
-  margin-bottom: 64px;
-  height: 196px;
-  vertical-align: middle;
 }
 .indications__list {
   display: flex;
@@ -900,7 +929,7 @@ button:hover {
   color: rgb(89, 157, 134);
 }
 .indications p {
-  max-width: 792px;
+  font-size: 18px;
 }
 
 .know {
@@ -908,7 +937,7 @@ button:hover {
 }
 .know h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 137px;
 }
 .know__grid {
   display: grid;
@@ -917,6 +946,7 @@ button:hover {
   max-width: 1200px;
   margin: 0 auto;
   align-items: center;
+  padding-bottom: 5px;
 }
 .know__grid div {
   display: flex;
@@ -939,18 +969,25 @@ button:hover {
 }
 
 .faq {
-  padding: 64px 0;
+  max-height: 744px;
+  margin-bottom: 64px;
+}
+.faq h2 {
+  margin-top: 110px;
+  margin-bottom: 77px;
 }
 .faq__accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   width: auto;
   margin: 0 auto;
-  border-radius: 5px;
-  overflow: hidden;
 }
 .faq__accordion details {
-  box-shadow: 2px 4px 12px 0px rgba(51, 51, 51, 0.15);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   padding: 20px;
   cursor: pointer;
+  border-radius: 8px;
 }
 .faq__accordion details summary {
   display: flex;
@@ -965,7 +1002,7 @@ button:hover {
   transition: transform 0.3s ease;
 }
 .faq__accordion details[open] summary svg {
-  transform: rotate(180deg);
+  transform: rotate(-90deg);
 }
 .faq__accordion details .faq__content {
   font-size: 18px;
@@ -977,7 +1014,7 @@ button:hover {
 .work {
   padding: 80px 0;
   position: relative;
-  background-image: url("./images/work-bg.png");
+  background-image: url("../images/images/work-bg.png");
   width: 100%;
   height: 737px;
   background-size: cover;
@@ -1010,12 +1047,13 @@ button:hover {
 }
 .work__list div span {
   font-size: 18px;
+  margin-bottom: 10px;
 }
 .work__list div img {
   border: solid 12px rgb(89, 157, 134);
   background-color: rgb(89, 157, 134);
-  width: 80px;
-  height: 80px;
+  width: auto;
+  height: auto;
 }
 .work__list div:nth-child(1) {
   top: 15%;
@@ -1079,4 +1117,47 @@ button:hover {
 }
 .custom-checkbox input:checked + span::before {
   opacity: 1;
+}
+
+.modal {
+  display: none;
+  /* Скрыть модальное окно по умолчанию */
+  position: fixed;
+  /* Оставаться на месте */
+  z-index: 1;
+  /* Сидеть на вершине */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Полная ширина */
+  height: 100%;
+  /* Полная высота */
+  overflow: auto;
+  /* Включить прокрутку, если необходимо */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: absolute;
+  top: 20vh;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: rgb(247, 250, 249);
+  padding: 20px;
+  width: 600px;
+  height: 588px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
