@@ -1,5 +1,4 @@
 .exam {
-    position: relative;
     padding-top: 96px;
     height: 795px;
     background-image: url("/proba.bel/images/exam.png");
@@ -12,27 +11,36 @@
         margin-bottom: 50px;
     }
 
-    img {
-        position: absolute;
-        top: 133px;
-        right: 208px;
-        width: 638px;
-        height: 638px;
-        border-radius: 50%;
-        border: solid $white 12px;
-        box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+    .question {
+        position: relative;
+        width: 80%;
+
+        img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -157px;
+            max-width: 33.2292vw;
+            min-width: 370px;
+            max-height: auto;
+            border-radius: 50%;
+            border: solid $white 12px;
+            box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
     }
+
 
     p {
         color: $white;
         max-width: 662px;
+        font-size: 24px;
     }
 
     ul {
-        max-width: 792px;
+        max-width: 100%;
         height: auto;
         border-radius: 32px;
         background-color: $white;
@@ -43,6 +51,11 @@
         margin-bottom: 30px;
 
         li {
+            p {
+                font-size: 20px;
+                color: $black;
+            }
+
             display: flex;
             gap: 16px;
             align-items: center;

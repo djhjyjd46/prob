@@ -55,7 +55,6 @@ a:hover {
 }
 
 .exam {
-  position: relative;
   padding-top: 96px;
   height: 795px;
   background-image: url("/proba.bel/images/exam.png");
@@ -67,12 +66,18 @@ a:hover {
   max-width: 662px;
   margin-bottom: 50px;
 }
-.exam img {
+.exam .question {
+  position: relative;
+  width: 80%;
+}
+.exam .question img {
   position: absolute;
-  top: 133px;
-  right: 208px;
-  width: 638px;
-  height: 638px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -157px;
+  max-width: 33.2292vw;
+  min-width: 370px;
+  max-height: auto;
   border-radius: 50%;
   border: solid rgb(247, 250, 249) 12px;
   box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
@@ -83,9 +88,10 @@ a:hover {
 .exam p {
   color: rgb(247, 250, 249);
   max-width: 662px;
+  font-size: 24px;
 }
 .exam ul {
-  max-width: 792px;
+  max-width: 100%;
   height: auto;
   border-radius: 32px;
   background-color: rgb(247, 250, 249);
@@ -99,6 +105,10 @@ a:hover {
   display: flex;
   gap: 16px;
   align-items: center;
+}
+.exam ul li p {
+  font-size: 20px;
+  color: rgb(51, 51, 51);
 }
 
 * {
@@ -618,29 +628,6 @@ button:hover {
   background-color: rgb(247, 250, 249);
   margin-bottom: 64px;
 }
-@media (max-width: 700px) {
-  .hero {
-    flex-direction: column;
-    height: 100vh-;
-  }
-}
-.hero h2 {
-  font-size: 2.5vw;
-  margin-bottom: 50px;
-}
-@media (max-width: 390px) {
-  .hero h2 {
-    font-size: 24px;
-  }
-}
-.hero p {
-  font-size: 1.25vw;
-}
-@media (max-width: 390px) {
-  .hero p {
-    font-size: 16px;
-  }
-}
 .hero__bg-image {
   position: absolute;
   top: 0;
@@ -684,18 +671,9 @@ button:hover {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 700px) {
+@media (max-width: 390px) {
   .hero__content {
     flex-direction: column;
-  }
-}
-.hero__text-block {
-  max-width: 690px;
-  margin-left: 150px;
-}
-@media (max-width: 390px) {
-  .hero__text-block {
-    margin: 0;
   }
 }
 .hero__image {
@@ -708,6 +686,13 @@ button:hover {
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.hero .swiper-slide img {
+  height: auto;
+}
+.hero .hero__text-block {
+  height: auto;
+  margin-left: 111px;
 }
 .hero .swiper-pagination {
   position: absolute;

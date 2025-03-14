@@ -7,27 +7,9 @@
     overflow: hidden;
     background-color: $white;
     margin-bottom: 64px;
-    @media (max-width: 700px) {
-      flex-direction:  column;
-      height: calc(100vh-48px);
-    }
 
-    h2{
-        font-size: 2.5vw;
-        margin-bottom: 50px;
-        @media (max-width: 390px) {
-            margin-top: 56px;
-            font-size: 24px;         
-        }
-    }
-    p{
-        font-size: 1.25vw;
-        @media (max-width: 390px) {
-          font-size: 16px;
-        }
-    }
 
-    
+    // Фоновое изображение на заднем плане
     &__bg-image {
         @media (max-width: 700px) {
           display: none;
@@ -47,6 +29,7 @@
             width: auto;
             object-fit: contain;
         }
+
     }
 
 
@@ -71,26 +54,17 @@
 
     // Контейнер для содержимого слайда
     &__content {
-        @media (max-width: 700px) {
-          flex-direction: column;
-        }
         display: flex;
         justify-content: flex-end;
         align-items: center;
         width: 100%;
-            margin: 0 auto;
-
-    }
-
-    // Стили для текстового блока
-    &__text-block {
-        max-width: 690px;        
-        margin-left: 150px;
+        margin: 0 auto;
         @media (max-width: 390px) {
-          margin: 0;
+          flex-direction: column;
         }
-
     }
+
+
 
     // Стили для изображения в слайде
     &__image {
@@ -105,7 +79,15 @@
         }
     }
 
-  
+    .swiper-slide img {
+        height: auto;
+    }
+
+    .hero__text-block {
+        height: auto;
+        margin-left: 111px;
+    }
+
     // Стили для пагинации (точек)
     .swiper-pagination {
         position: absolute;
