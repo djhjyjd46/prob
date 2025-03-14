@@ -68,14 +68,15 @@ a:hover {
 }
 .exam .question {
   position: relative;
-  width: 80%;
+  width: 82%;
 }
 .exam .question img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: -157px;
-  max-width: 33.2292vw;
+  right: -296px;
+  max-width: 636px;
+  width: 636px;
   min-width: 370px;
   max-height: auto;
   border-radius: 50%;
