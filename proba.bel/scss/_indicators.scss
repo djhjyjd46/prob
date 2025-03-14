@@ -3,6 +3,10 @@
     height: 860px;
     overflow: hidden; 
     margin-bottom: 60px;
+
+    @media (max-width: 700px) {
+        height:auto
+    }
     
     &::before {
         content: "";
@@ -35,6 +39,9 @@
         flex-wrap: wrap;
         gap: 24px;
         margin-bottom: 40px;
+        @media (max-width: 700px) {
+          flex-direction: column;
+        }
 
         li {
             display: flex;

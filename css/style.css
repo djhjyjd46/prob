@@ -77,13 +77,13 @@ a:hover {
 
 .exam {
   padding-top: 96px;
-  height: 795px;
+  min-height: 795px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (max-width: 700px) {
   .exam {
-    padding: 10px;
+    padding: 48px 10px;
   }
 }
 @media (max-width: 700px) {
@@ -104,6 +104,8 @@ a:hover {
 @media (max-width: 700px) {
   .exam .question {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }
 .exam .question img {
@@ -124,9 +126,8 @@ a:hover {
 }
 @media (max-width: 700px) {
   .exam .question img {
-    position: relative;
-    right: 0;
-    top: 0;
+    position: absolute;
+    bottom: 20px;
     max-width: 100%;
     min-width: 312px;
   }
@@ -135,6 +136,11 @@ a:hover {
   color: rgb(247, 250, 249);
   max-width: 662px;
   font-size: 24px;
+}
+@media (max-width: 700px) {
+  .exam p {
+    font-size: 16px;
+  }
 }
 .exam ul {
   max-width: 100%;
@@ -147,6 +153,14 @@ a:hover {
   gap: 30px;
   margin-bottom: 30px;
 }
+@media (max-width: 700x) {
+  .exam ul {
+    padding: 24px 16px;
+    min-height: 324px;
+    border-radius: 24px;
+    gap: 24px;
+  }
+}
 .exam ul li {
   display: flex;
   gap: 16px;
@@ -155,6 +169,11 @@ a:hover {
 .exam ul li p {
   font-size: 20px;
   color: rgb(51, 51, 51);
+}
+@media (max-width: 700px) {
+  .exam ul li p {
+    font-size: 16px;
+  }
 }
 
 * {
@@ -709,6 +728,7 @@ button:hover {
 }
 @media (max-width: 700px) {
   .hero {
+    height: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -782,7 +802,7 @@ button:hover {
 @media (max-width: 700px) {
   .hero .hero__text-block {
     margin-left: 0;
-    padding: 10px;
+    padding: 10;
   }
 }
 .hero .swiper-pagination {
@@ -983,6 +1003,11 @@ button:hover {
   overflow: hidden;
   margin-bottom: 60px;
 }
+@media (max-width: 700px) {
+  .indications {
+    height: auto;
+  }
+}
 .indications::before {
   content: "";
   position: absolute;
@@ -1011,6 +1036,11 @@ button:hover {
   flex-wrap: wrap;
   gap: 24px;
   margin-bottom: 40px;
+}
+@media (max-width: 700px) {
+  .indications__list {
+    flex-direction: column;
+  }
 }
 .indications__list li {
   display: flex;
