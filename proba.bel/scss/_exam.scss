@@ -1,10 +1,17 @@
 .exam {
     padding-top: 96px;
     height: 795px;
-    background-image: url("/proba.bel/images/exam.png");
+    @media (max-width: 700px) {
+      padding: 10px;
+    }
+   
     background-size: cover; // Заполняет весь контейнер без искажений
     background-repeat: no-repeat; // Отключает повторение
-
+    
+    @media (max-width: 700px) {
+      background-image: url("/proba.bel/images/exam-bgm.png"); 
+      min-height: 1073px;
+    }
     h2 {
         color: $white;
         max-width: 662px;
@@ -12,8 +19,11 @@
     }
 
     .question {
-position: relative;
-width: 82%;
+        position: relative;
+        width: 82%;
+        @media (max-width: 700px) {
+            width: 100%;
+        }
 
         img {
             position: absolute;
@@ -30,13 +40,15 @@ width: 82%;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+
             @media (max-width: 700px) {
                 position: relative;
                 right: 0;
                 top: 0;
-                width: 100%;
+                max-width: 100%;
+                min-width: 312px;
 
-              }
+            }
         }
     }
 

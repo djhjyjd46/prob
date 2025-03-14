@@ -31,11 +31,19 @@ h2{
 font-weight: 400;
 font-size: 40px;
 line-height: 140%;
+@media (max-width: 700px) {
+font-size: 24px;
+}
 }
 
 a {
   
   &:hover {
       color: $hover-green;
+  }
+}
+img{
+  @media (max-width: 700px) {
+    width: 100%;
   }
 }

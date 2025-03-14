@@ -7,6 +7,10 @@
     overflow: hidden;
     background-color: $white;
     margin-bottom: 64px;
+    @media (max-width: 700px) {
+      display: flex;
+      flex-direction: column;
+    }
 
 
     // Фоновое изображение на заднем плане
@@ -86,6 +90,11 @@
     .hero__text-block {
         height: auto;
         margin-left: 111px;
+        @media (max-width: 700px) {
+            margin-left: 0;
+            padding: 10px;
+
+          }
     }
 
     // Стили для пагинации (точек)

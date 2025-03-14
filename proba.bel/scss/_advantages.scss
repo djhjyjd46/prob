@@ -26,11 +26,14 @@
     &__pag-adv {
         display: flex;
         gap: 12px;
+        @media (max-width: 700px) {
+          display: none;
+        }
     }
 
     .swiper {
+        padding-top:  50px;
         width: 100%;
-        padding: 30px 0 0;
     }
 
     .swiper-wrapper {

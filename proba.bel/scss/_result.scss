@@ -67,6 +67,11 @@
                 width: 516px;
                 height: 516px;
                 object-fit: cover;
+                @media (max-width: 700px) {
+                    width: 100%;
+                    height: auto;
+                    align-items: center;
+                }
             }
 
         }

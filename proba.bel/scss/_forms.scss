@@ -15,6 +15,13 @@
         display: flex;
         gap: 16px;
         margin-bottom: 20px;
+        @media (max-width: 700px) {
+            max-width: 100%;
+            width: 100%;
+            align-items: center;
+            height: auto;
+        }
+
         input {
             width: 336px;
             height: 64px;
@@ -23,26 +30,39 @@
             color: $black;
             font-size: 18px;
             padding: 20px;
+            @media (max-width: 700px) {
+                width: 100%;
+                align-items: center;
+            }
         }
 
         button {
             width: 282px;
             height: 64px;
+
+            @media (max-width: 700px) {
+                max-width: 100%;
+                width: 100%;
+                align-items: center;
+            }
         }
+
         @media (max-width: 700px) {
             display: flex;
             flex-direction: column;
-          }
-               
+        }
+
     }
-    &__conf{
+
+    &__conf {
         display: flex;
         gap: 12px;
         align-items: center;
         max-width: 668px;
-        a{
-           color: $light-green;
-           text-decoration: underline;
+
+        a {
+            color: $light-green;
+            text-decoration: underline;
         }
     }
 

@@ -59,17 +59,38 @@ h2 {
   font-size: 40px;
   line-height: 140%;
 }
+@media (max-width: 700px) {
+  h2 {
+    font-size: 24px;
+  }
+}
 
 a:hover {
   color: rgb(52, 111, 92);
 }
 
+@media (max-width: 700px) {
+  img {
+    width: 100%;
+  }
+}
+
 .exam {
   padding-top: 96px;
   height: 795px;
-  background-image: url("/proba.bel/images/exam.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (max-width: 700px) {
+  .exam {
+    padding: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .exam {
+    background-image: url("/proba.bel/images/exam-bgm.png");
+    min-height: 1073px;
+  }
 }
 .exam h2 {
   color: rgb(247, 250, 249);
@@ -79,6 +100,11 @@ a:hover {
 .exam .question {
   position: relative;
   width: 82%;
+}
+@media (max-width: 700px) {
+  .exam .question {
+    width: 100%;
+  }
 }
 .exam .question img {
   position: absolute;
@@ -101,7 +127,8 @@ a:hover {
     position: relative;
     right: 0;
     top: 0;
-    width: 100%;
+    max-width: 100%;
+    min-width: 312px;
   }
 }
 .exam p {
@@ -545,6 +572,14 @@ button:hover {
   gap: 16px;
   margin-bottom: 20px;
 }
+@media (max-width: 700px) {
+  .contact-form form {
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+    height: auto;
+  }
+}
 .contact-form form input {
   width: 336px;
   height: 64px;
@@ -554,9 +589,22 @@ button:hover {
   font-size: 18px;
   padding: 20px;
 }
+@media (max-width: 700px) {
+  .contact-form form input {
+    width: 100%;
+    align-items: center;
+  }
+}
 .contact-form form button {
   width: 282px;
   height: 64px;
+}
+@media (max-width: 700px) {
+  .contact-form form button {
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+  }
 }
 @media (max-width: 700px) {
   .contact-form form {
@@ -659,6 +707,12 @@ button:hover {
   background-color: rgb(247, 250, 249);
   margin-bottom: 64px;
 }
+@media (max-width: 700px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .hero__bg-image {
   position: absolute;
   top: 0;
@@ -725,6 +779,12 @@ button:hover {
   height: auto;
   margin-left: 111px;
 }
+@media (max-width: 700px) {
+  .hero .hero__text-block {
+    margin-left: 0;
+    padding: 10px;
+  }
+}
 .hero .swiper-pagination {
   position: absolute;
   bottom: 20px;
@@ -778,9 +838,14 @@ button:hover {
   display: flex;
   gap: 12px;
 }
+@media (max-width: 700px) {
+  .advantages__pag-adv {
+    display: none;
+  }
+}
 .advantages .swiper {
+  padding-top: 50px;
   width: 100%;
-  padding: 30px 0 0;
 }
 .advantages .swiper-wrapper {
   display: flex;
@@ -880,6 +945,13 @@ button:hover {
   height: 516px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 700px) {
+  .result .result__grid div:nth-child(3) img {
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
 }
 .result .result__grid .result__item:nth-child(1) {
   grid-column: 1/2;
@@ -985,7 +1057,7 @@ button:hover {
 .know__grid div {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   gap: 12px;
 }
 .know__grid svg {
@@ -1053,18 +1125,19 @@ button:hover {
   .work {
     display: flex;
     flex-direction: column;
+    min-height: 1846px;
     background-image: url("/proba.bel/images/work-bgmobile.png");
   }
 }
 .work__list {
   position: relative;
   width: 100%;
-  height: 737px;
 }
 @media (max-width: 700px) {
   .work__list {
     display: flex;
     flex-direction: column;
+    gap: 52px;
   }
 }
 .work__line {
@@ -1076,6 +1149,11 @@ button:hover {
   max-width: 877px;
   min-width: 300px;
 }
+@media (max-width: 700px) {
+  .work__line {
+    display: none;
+  }
+}
 .work__list div {
   display: flex;
   flex-direction: column;
@@ -1084,6 +1162,12 @@ button:hover {
   max-width: 240px;
   height: auto;
   text-align: center;
+}
+@media (max-width: 700px) {
+  .work__list div {
+    position: relative;
+    max-width: 100%;
+  }
 }
 .work__list div span {
   font-size: 18px;
@@ -1095,14 +1179,13 @@ button:hover {
   height: 80px;
 }
 .work__list div:nth-child(1) {
-  top: 15%;
+  top: 0;
   left: 0;
 }
 @media (max-width: 700px) {
   .work__list div:nth-child(1) {
-    position: relative;
     top: 0;
-    right: 0;
+    left: 0;
   }
 }
 .work__list div:nth-child(2) {
@@ -1112,7 +1195,7 @@ button:hover {
 @media (max-width: 700px) {
   .work__list div:nth-child(2) {
     top: 0;
-    right: 0;
+    left: 0;
   }
 }
 .work__list div:nth-child(3) {
@@ -1141,8 +1224,8 @@ button:hover {
 }
 @media (max-width: 700px) {
   .work__list div:nth-child(5) {
-    top: 0;
-    right: 0;
+    left: 0;
+    bottom: 0;
   }
 }
 .work__list div:nth-child(6) {
@@ -1151,8 +1234,8 @@ button:hover {
 }
 @media (max-width: 700px) {
   .work__list div:nth-child(6) {
-    top: 0;
-    right: 0;
+    left: 0;
+    bottom: 0;
   }
 }
 
