@@ -30,6 +30,13 @@ width: 82%;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            @media (max-width: 700px) {
+                position: relative;
+                right: 0;
+                top: 0;
+                width: 100%;
+
+              }
         }
     }
 

@@ -8,6 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
             prevEl: '.advantages__left',
         },
         breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
             // когда ширина экрана >= 576px
             576: {
                 slidesPerView: 2,
