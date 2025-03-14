@@ -7,41 +7,21 @@
     overflow: hidden;
     background-color: $white;
     margin-bottom: 64px;
-    @media (max-width: 390px) {
-      min-height: 360px ;
+
+
+    // Статичное изображение в верхнем левом углу
+    &__static-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
     }
-
-    .hero__text-block {
-        position: relative;
-        margin: 0 0 0 168px;
-        top: -36px;
-        max-width: 690px;
-        h2 {
-            font-size: 48px;
-            margin-bottom: 36px;
-            
-        }
-
-        p {
-            font-size: 24px;
-        }
-        @media (max-width: 390px) {
-            h2{
-                font-weight: 400;
-                font-size: 24px;
-                margin-bottom: 10px;     
-                   
-            }
-          p{
-            font-size: 16px;
-          }
-        }
-    }
-
-   
 
     // Фоновое изображение на заднем плане
     &__bg-image {
+        @media (max-width: 390px) {
+          display: none;
+        }
         position: absolute;
         top: 0;
         left: 0;
@@ -57,10 +37,9 @@
             width: auto;
             object-fit: contain;
         }
-        @media (max-width: 390px) {
-          display: none;
-        }
+
     }
+
 
     .swiper {
         width: 100%;
@@ -88,21 +67,17 @@
         align-items: center;
         width: 100%;
         margin: 0 auto;
-        gap: 10px;
-
         @media (max-width: 390px) {
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 20px;
+          flex-direction: column;
         }
     }
-    .hero__image{
-        img{
-            width: 100%;
-            min-width: 550px;
-            height: auto;
-        }
+
+    // Стили для текстового блока
+    &__text-block {
+        max-width: 563px;
+
     }
+
     // Стили для изображения в слайде
     &__image {
         display: flex;
@@ -110,30 +85,27 @@
         align-items: center;
 
         img {
-            width: 100%;
+            max-width: 100%;
             height: auto;
             object-fit: contain;
-
-            @media (max-width: 390px) {
-                width: 100%;
-                height: auto;
-            }
         }
     }
 
     .swiper-slide img {
-        max-width: 100%;
+        max-width: 872px;
         height: auto;
 
-        @media (max-width: 390px) {
-            max-width: 100%;
-        }
+    }
+
+    .hero__text-block {
+        width: 569pxpx;
+        height: auto;
     }
 
     // Стили для пагинации (точек)
     .swiper-pagination {
         position: absolute;
-        bottom: 30px;
+        bottom: 20px;
         left: 0;
         right: 0;
         display: flex;
