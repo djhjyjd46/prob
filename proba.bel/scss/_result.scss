@@ -16,6 +16,10 @@
     }
 
     .result__grid {
+        @media (max-width: 390px) {
+          display: flex;
+          flex-direction: column;
+        }
         display: grid;
         grid-template-columns: 1fr 2fr 1fr; // Три колонки
         grid-template-rows: repeat(2, auto); // Две строки

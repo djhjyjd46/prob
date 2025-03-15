@@ -12,9 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
             clickable: true,
         },
         breakpoints: {
-            // когда ширина экрана >= 390px
-            390: {
+            0: {
                 slidesPerView: 1,
+                spaceBetween: 20
+            },
+            // когда ширина экрана >= 390px
+            500: {
+                slidesPerView: 2,
                 spaceBetween: 20
             },
             // когда ширина экрана >= 768px
@@ -23,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 spaceBetween: 30
             },
             // когда ширина экрана >= 992px
-            992: {
-                slidesPerView: 4,
+            1200: {
+                slidesPerView: 3,
                 spaceBetween: 30
             }
         }

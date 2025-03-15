@@ -11,9 +11,12 @@
         gap: 24px;
         max-width: 1200px;
         margin: 0 auto;
-        align-items: center;
-        
+        align-items: center;        
         padding-bottom: 5px;
+        @media (max-width: 390px) {
+          display: flex;
+          flex-direction: column;
+        }
     
         div {
             display: flex;

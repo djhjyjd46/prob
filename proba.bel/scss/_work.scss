@@ -26,53 +26,64 @@
     }
 
     &__list div {
-        display: flex;        
+        display: flex;
         flex-direction: column;
         align-items: center;
-        position: absolute;
         max-width: 240px;
         height: auto;
         text-align: center;
-        span{
+
+        @media (min-width: 390px) {
+            position: absolute;
+
+        }
+
+        span {
             font-size: 18px;
             margin-bottom: 10px;
         }
 
-        img {border: solid 12px $green;
+        img {
+            border: solid 12px $green;
             background-color: $green;
             width: auto;
             height: auto;
         }
     }
 
-    &__list div:nth-child(1) {
-        top: 15%;
-        left: 0;
+
+
+    @media (min-width: 390px) {
+        &__list div:nth-child(1) {
+            top: 15%;
+            left: 0;
+        }
+
+        &__list div:nth-child(2) {
+            top: 40%;
+            left: 16%;
+        }
+
+        &__list div:nth-child(3) {
+            top: 14%;
+            right: 49%;
+        }
+
+        &__list div:nth-child(4) {
+            top: 39%;
+            right: 33%;
+        }
+
+        &__list div:nth-child(5) {
+            bottom: 60%;
+            left: 63%;
+        }
+
+        &__list div:nth-child(6) {
+            bottom: 29%;
+            left: 76.5%;
+        }
     }
 
-    &__list div:nth-child(2) {
-        top: 40%;
-        left: 16%;
-    }
-
-    &__list div:nth-child(3) {
-        top: 14%;
-        right: 49%;
-    }
-
-    &__list div:nth-child(4) {
-        top: 39%;
-        right: 33%;
-    }
-
-    &__list div:nth-child(5) {
-        bottom: 60%;
-        left: 63%;
-    }
-
-    &__list div:nth-child(6) {
-        bottom: 29%;
-        left: 76.5%;
-    }
 
 }
