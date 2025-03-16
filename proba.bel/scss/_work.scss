@@ -9,10 +9,25 @@
     background-repeat: no-repeat;
     color: $white;
 
+    @media (max-width: 400px) {
+        background-image: url('/proba.bel/images/work-mobilebg.png');
+        height: 1846px;
+        padding: 10px;
+    }
+
+
+
     &__list {
         position: relative;
         width: 100%;
         height: 737px;
+
+        @media (max-width: 400px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
     }
 
     &__line {
@@ -25,6 +40,12 @@
         min-width: 300px;
     }
 
+    &__line-mob {
+        position: absolute;
+        top: 128px;
+
+    }
+
     &__list div {
         display: flex;
         flex-direction: column;
@@ -33,8 +54,10 @@
         height: auto;
         text-align: center;
 
-        @media (min-width: 390px) {
+        @media (min-width: 400px) {
             position: absolute;
+            max-width: 282px;
+
 
         }
 
@@ -53,7 +76,7 @@
 
 
 
-    @media (min-width: 390px) {
+    @media (min-width: 400px) {
         &__list div:nth-child(1) {
             top: 15%;
             left: 0;

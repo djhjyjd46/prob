@@ -1,12 +1,20 @@
 .faq {
     max-height: 744px;
+    @media (max-width: 390px) {
+      min-height: 911px;
+    }
     margin-bottom: 64px;
 
     h2 {
         margin-top: 110px;
         margin-bottom: 77px;
+        @media (max-width: 390px) {
+          margin: 0;
+        }
     }
-
+    svg{
+        min-width: 24px;
+    }
     &__accordion {
         display: flex;
         flex-direction: column;
@@ -29,8 +37,11 @@
                 align-items: center;
 
                 span {
-                    font-size: 20px;
+                    font-size: 16px;
                     margin-bottom: 12px;
+                    @media (max-width: 390px) {
+                      
+                    }
                 }
 
                 svg {
@@ -45,6 +56,11 @@
 
             .faq__content {
                 font-size: 18px;
+                p{
+                    @media (max-width: 390px) {
+                        font-size: 14px;
+                      }
+                }
             }
         }
 

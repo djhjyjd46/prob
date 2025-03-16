@@ -69,10 +69,19 @@ body {
 @media (max-width: 390px) {
   .container {
     padding: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 400;
 }
 
@@ -84,6 +93,12 @@ h2 {
 @media (max-width: 390px) {
   h2 {
     font-size: 24px;
+  }
+}
+
+@media (max-width: 390px) {
+  p {
+    font-size: 16px;
   }
 }
 
@@ -99,19 +114,23 @@ h2 {
   .exam {
     background-image: url("/proba.bel/images/exam-mobilebg.png");
     min-height: 1073px;
+    padding-top: 0;
+  }
+}
+@media (max-width: 390px) {
+  .exam .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .exam h2 {
   color: rgb(247, 250, 249);
   max-width: 662px;
-  margin-bottom: 42px;
 }
 .exam img {
-  position: absolute;
-  top: 133px;
-  right: 208px;
-  width: 650px;
-  height: 650px;
+  width: 312px;
+  height: 312px;
   border-radius: 50%;
   border: solid rgb(247, 250, 249) 5px;
   box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
@@ -119,9 +138,17 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (min-width: 400px) {
+  .exam img {
+    position: absolute;
+    top: 133px;
+    right: 208px;
+    width: 650px;
+    height: 650px;
+  }
+}
 .exam p {
   color: rgb(247, 250, 249);
-  font-size: 24px;
 }
 .exam ul {
   max-width: 792px;
@@ -135,10 +162,15 @@ h2 {
   margin-bottom: 30px;
 }
 .exam ul li {
-  font-size: 20px;
   display: flex;
   gap: 16px;
   align-items: center;
+}
+@media (max-width: 390px) {
+  .exam ul li svg {
+    min-width: 24px;
+    max-width: 24px;
+  }
 }
 
 * {
@@ -181,9 +213,9 @@ button, input, textarea {
   background-color: rgb(247, 250, 249);
   font-size: 18px;
 }
-@media (max-width: 390px) {
+@media (max-width: 767px) {
   .header {
-    display: none;
+    padding-inline: 10px;
   }
 }
 .header__top {
@@ -568,6 +600,11 @@ button:hover {
   color: rgb(247, 250, 249);
   padding: 88px 0 63px;
 }
+@media (max-width: 390px) {
+  .contact-form {
+    height: auto;
+  }
+}
 .contact-form h2 {
   max-width: 370px;
   margin-bottom: 32px;
@@ -576,6 +613,11 @@ button:hover {
   display: flex;
   gap: 16px;
   margin-bottom: 20px;
+}
+@media (max-width: 765px) {
+  .contact-form form {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 390px) {
   .contact-form form {
@@ -594,6 +636,11 @@ button:hover {
 .contact-form form button {
   width: 282px;
   height: 64px;
+}
+@media (max-width: 390px) {
+  .contact-form form button {
+    width: 100%;
+  }
 }
 .contact-form__conf {
   display: flex;
@@ -618,6 +665,11 @@ button:hover {
 .footer .container {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 390px) {
+  .footer .container {
+    flex-direction: column;
+  }
 }
 .footer .container .footer__logo {
   display: flex;
@@ -680,7 +732,6 @@ button:hover {
   align-items: center;
   width: 100%;
   position: relative;
-  overflow: hidden;
   background-color: rgb(247, 250, 249);
   margin-bottom: 64px;
 }
@@ -971,6 +1022,11 @@ button:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 390px) {
+  .result .result__grid div:nth-child(3) img {
+    height: auto;
+  }
+}
 .result .result__grid .result__item:nth-child(1) {
   grid-column: 1/2;
   grid-row: 1/2;
@@ -1001,6 +1057,11 @@ button:hover {
   overflow: hidden;
   margin-bottom: 64px;
 }
+@media (max-width: 390px) {
+  .indications {
+    height: auto;
+  }
+}
 .indications h2 {
   margin-bottom: 138px;
 }
@@ -1028,6 +1089,11 @@ button:hover {
   gap: 24px;
   margin-bottom: 40px;
 }
+@media (max-width: 390px) {
+  .indications__list {
+    flex-direction: column;
+  }
+}
 .indications__list li {
   display: flex;
   max-width: 371px;
@@ -1052,9 +1118,23 @@ button:hover {
 .know {
   margin-bottom: 64px;
 }
+@media (max-width: 390px) {
+  .know {
+    margin-bottom: 0;
+    background-image: url("/proba.bel/images/know-bg.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
 .know h2 {
   text-align: center;
   margin-bottom: 137px;
+}
+@media (max-width: 390px) {
+  .know h2 {
+    margin-bottom: 40px;
+  }
 }
 .know__grid {
   display: grid;
@@ -1077,6 +1157,11 @@ button:hover {
   align-items: start;
   gap: 12px;
 }
+@media (max-width: 390px) {
+  .know__grid div {
+    align-items: center;
+  }
+}
 .know__grid svg {
   min-width: 24px;
 }
@@ -1095,9 +1180,22 @@ button:hover {
   max-height: 744px;
   margin-bottom: 64px;
 }
+@media (max-width: 390px) {
+  .faq {
+    min-height: 911px;
+  }
+}
 .faq h2 {
   margin-top: 110px;
   margin-bottom: 77px;
+}
+@media (max-width: 390px) {
+  .faq h2 {
+    margin: 0;
+  }
+}
+.faq svg {
+  min-width: 24px;
 }
 .faq__accordion {
   display: flex;
@@ -1118,7 +1216,7 @@ button:hover {
   align-items: center;
 }
 .faq__accordion details summary span {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 12px;
 }
 .faq__accordion details summary svg {
@@ -1129,6 +1227,11 @@ button:hover {
 }
 .faq__accordion details .faq__content {
   font-size: 18px;
+}
+@media (max-width: 390px) {
+  .faq__accordion details .faq__content p {
+    font-size: 14px;
+  }
 }
 .faq__accordion details:last-child {
   border-bottom: none;
@@ -1145,10 +1248,25 @@ button:hover {
   background-repeat: no-repeat;
   color: rgb(247, 250, 249);
 }
+@media (max-width: 400px) {
+  .work {
+    background-image: url("/proba.bel/images/work-mobilebg.png");
+    height: 1846px;
+    padding: 10px;
+  }
+}
 .work__list {
   position: relative;
   width: 100%;
   height: 737px;
+}
+@media (max-width: 400px) {
+  .work__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
 }
 .work__line {
   position: absolute;
@@ -1159,6 +1277,10 @@ button:hover {
   max-width: 877px;
   min-width: 300px;
 }
+.work__line-mob {
+  position: absolute;
+  top: 128px;
+}
 .work__list div {
   display: flex;
   flex-direction: column;
@@ -1167,9 +1289,10 @@ button:hover {
   height: auto;
   text-align: center;
 }
-@media (min-width: 390px) {
+@media (min-width: 400px) {
   .work__list div {
     position: absolute;
+    max-width: 282px;
   }
 }
 .work__list div span {
@@ -1182,7 +1305,7 @@ button:hover {
   width: auto;
   height: auto;
 }
-@media (min-width: 390px) {
+@media (min-width: 400px) {
   .work__list div:nth-child(1) {
     top: 15%;
     left: 0;
@@ -1291,6 +1414,32 @@ button:hover {
   cursor: pointer;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  -webkit-clip-path: inset(100%) !important;
+          clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+@media (max-width: 767px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .visible-mobile {
+    display: none !important;
+  }
+}
+
 .burger-button {
   padding: 0;
   background-color: transparent;
@@ -1298,8 +1447,7 @@ button:hover {
   width: 48px;
   aspect-ratio: 1;
   position: relative;
-  border-radius: red;
-  background-color: red;
+  background-color: rgb(89, 157, 134);
 }
 .burger-button::after {
   position: absolute;
@@ -1309,7 +1457,7 @@ button:hover {
   content: "";
   width: 50%;
   height: 2px;
-  background-color: darkgray;
+  background-color: rgb(247, 250, 249);
   border-radius: 5px;
   box-shadow: 0 -8px, 0 8px;
 }
@@ -1320,6 +1468,7 @@ button:hover {
   margin: 0;
   padding: 14px 20px;
   border: none;
+  overflow: hidden;
 }
 .mobile-overlay:modal {
   max-width: 100%;

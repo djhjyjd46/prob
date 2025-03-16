@@ -7,32 +7,46 @@
     background-repeat: no-repeat; // Отключает повторение
 
     @media (max-width: 390px) {
-    background-image: url("/proba.bel/images/exam-mobilebg.png");
-     min-height: 1073px;;     
+        background-image: url("/proba.bel/images/exam-mobilebg.png");
+        min-height: 1073px;
+        padding-top: 0;
     }
+
+    .container {
+        @media (max-width: 390px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
     h2 {
         color: $white;
         max-width: 662px;
-        margin-bottom: 42px;
     }
 
     img {
-        position: absolute;
-        top: 133px;
-        right: 208px;
-        width: 650px;
-        height: 650px;
+        width: 312px;
+        height: 312px;
         border-radius: 50%;
         border: solid $white 5px;
         box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+
+        @media (min-width: 400px) {
+            position: absolute;
+            top: 133px;
+            right: 208px;
+            width: 650px;
+            height: 650px;
+
+        }
     }
 
     p {
         color: $white;
-        font-size: 24px;
     }
 
     ul {
@@ -47,10 +61,16 @@
         margin-bottom: 30px;
 
         li {
-            font-size: 20px;
             display: flex;
             gap: 16px;
             align-items: center;
+
+            svg {
+                @media (max-width: 390px) {
+                    min-width: 24px;
+                    max-width: 24px;
+                }
+            }
         }
     }
 }

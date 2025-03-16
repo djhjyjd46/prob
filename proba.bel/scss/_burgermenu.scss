@@ -3,10 +3,8 @@
     @include square(48px);
   
     position: relative;
-    border-radius: red;
-  
 
-      background-color:red;
+      background-color:$green;
    
   
     &::after {
@@ -15,7 +13,7 @@
       content: '';
       width: 50%;
       height: 2px;
-      background-color: darkgray;
+      background-color: $white;
       border-radius: 5px;
       box-shadow: 0 -8px, 0 8px;
     }

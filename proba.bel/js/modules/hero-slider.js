@@ -1,10 +1,11 @@
+document.addEventListener('DOMContentLoaded', function () {
 const heroSwiper = new Swiper('.hero-swiper', {
     // Параметры слайдера
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
     autoplay: {
-        delay: 4000,
+        delay: 400000,
         disableOnInteraction: false,
     },
     effect: 'fade',
@@ -46,4 +47,4 @@ heroSwiper.on('slideChange', function () {
 });
 
 // Запускаем принудительно при загрузке для установки начального состояния
-heroSwiper.emit('slideChange');
+heroSwiper.emit('slideChange');});
