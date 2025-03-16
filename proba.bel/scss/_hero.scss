@@ -137,7 +137,8 @@
     }
 
     .swiper-slide img {
-        max-width: 100%;
+        width: 100%;
+        max-width: 872px;
         height: auto;
 
         @media (max-width: 390px) {
