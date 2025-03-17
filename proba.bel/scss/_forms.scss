@@ -5,8 +5,9 @@
     background-repeat: no-repeat;
     color: $white;
     padding: 88px 0 63px;
-    @media (max-width: 390px) {
+    @media (max-width: 400px) {
       height: auto;
+      padding: 37px 0 10px;
     }
 
     h2 {
@@ -19,7 +20,7 @@
         @media (max-width: 765px) {
             flex-wrap: wrap;
         }
-        @media (max-width: 390px) {          
+        @media (max-width: 400px) {          
             flex-direction: column;
         }
         gap: 16px;
@@ -37,7 +38,7 @@
         button {
             width: 282px;
             height: 64px;
-            @media (max-width: 390px) {
+            @media (max-width: 400px) {
               width: 100%;
             }
         }

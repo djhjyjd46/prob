@@ -10,14 +10,14 @@ body {
 
 }
 
-// Контейнер
+
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
 
-  @media (max-width: 390px) {
+  @media (max-width: 400px) {
     padding: 10px;
     display: flex;
     align-items: center;
@@ -41,7 +41,7 @@ h2 {
   font-size: 40px;
   line-height: 140%;
 
-  @media (max-width: 390px) {
+  @media (max-width: 400px) {
     font-size: 24px;
   }
 }

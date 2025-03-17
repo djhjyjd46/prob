@@ -2,6 +2,10 @@
     position: relative;
     margin-bottom: 129px;
 
+    @media (max-width: 400px) {
+        margin-bottom: 38px;
+    }
+
     .title {
         display: flex;
         justify-content: center;
@@ -13,13 +17,20 @@
         max-height: 196px;
         text-align: center;
         margin-bottom: 114px;
+
+        @media (max-width: 400px) {
+            margin-bottom: 40px;
+        }
     }
 
     .result__grid {
-        @media (max-width: 390px) {
-          display: flex;
-          flex-direction: column;
+        @media (max-width: 410px) {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-bottom: 38px;
         }
+
         display: grid;
         grid-template-columns: 1fr 2fr 1fr; // Три колонки
         grid-template-rows: repeat(2, auto); // Две строки
@@ -67,8 +78,9 @@
                 width: 516px;
                 height: 516px;
                 object-fit: cover;
+
                 @media (max-width: 390px) {
-                  height: auto;
+                    height: auto;
                 }
             }
 
