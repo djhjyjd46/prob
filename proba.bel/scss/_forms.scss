@@ -5,9 +5,10 @@
     background-repeat: no-repeat;
     color: $white;
     padding: 88px 0 63px;
+
     @media (max-width: 400px) {
-      height: auto;
-      padding: 37px 0 10px;
+        height: auto;
+        padding: 37px 0 10px;
     }
 
     h2 {
@@ -17,14 +18,18 @@
 
     form {
         display: flex;
+
         @media (max-width: 765px) {
             flex-wrap: wrap;
         }
-        @media (max-width: 400px) {          
+
+        @media (max-width: 400px) {
             flex-direction: column;
         }
+
         gap: 16px;
         margin-bottom: 20px;
+
         input {
             max-width: 336px;
             height: 64px;
@@ -38,19 +43,22 @@
         button {
             width: 282px;
             height: 64px;
+
             @media (max-width: 400px) {
-              width: 100%;
+                width: 100%;
             }
         }
     }
-    &__conf{
+
+    &__conf {
         display: flex;
         gap: 12px;
         align-items: center;
         max-width: 668px;
-        a{
-           color: $light-green;
-           text-decoration: underline;
+
+        a {
+            color: $light-green;
+            text-decoration: underline;
         }
     }
 

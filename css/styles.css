@@ -1532,9 +1532,9 @@ button:hover {
   left: 50%;
   transform: translate(-50%);
   background-color: rgb(247, 250, 249);
-  padding: 20px;
+  padding: 46px;
   width: 600px;
-  height: 588px;
+  height: auto;
 }
 
 .close {
@@ -1549,6 +1549,46 @@ button:hover {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.modal-phone h2 {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+.modal-phone p {
+  font-weight: 300;
+  line-height: 130%;
+  margin-bottom: 32px;
+}
+.modal-phone form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.modal-phone form input {
+  border: 1px solid rgb(213, 216, 217);
+  width: auto;
+  height: 64px;
+  padding: 23px;
+}
+.modal-phone form label {
+  margin-bottom: 32px;
+}
+.modal-phone form .custom-checkbox p {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 140%;
+  color: rgb(87, 87, 86);
+  margin-bottom: 16px;
+}
+.modal-phone form .custom-checkbox span {
+  border: solid 2px rgb(213, 216, 217);
+}
+.modal-phone form button {
+  width: 282px;
+  height: 64px;
 }
 
 .visually-hidden {
@@ -1611,17 +1651,22 @@ button:hover {
   max-width: 100%;
   max-height: 100%;
 }
+.mobile-overlay .mobile-overlay__tel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: left;
+}
 .mobile-overlay__close-button-wrapper {
   display: flex;
   justify-content: end;
 }
 .mobile-overlay__list {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  row-gap: 30px;
-  min-height: 80vh;
+  gap: 10px;
+  justify-content: left;
+  margin-bottom: 40px;
 }
 
 .cross-button {
@@ -1658,4 +1703,4 @@ button:hover {
 }
 .cross-button::after {
   rotate: -45deg;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=styles.css.map */
