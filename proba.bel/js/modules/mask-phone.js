@@ -1,12 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const phoneInput = document.querySelector("input[type='tel']");
-  
-  if (phoneInput) { // Проверяем, что элемент найден
-      IMask(phoneInput, {
-          mask: "+375 (00) 000-00-00",
-          lazy: false, // Всегда показывать маску
+  const applyPhoneMask = (input) => {
+    if (input) {
+      IMask(input, {
+        mask: "+375 (00) 000-00-00",
+        lazy: false, // Всегда показывать маску
       });
-  } else {
-      console.error("Ошибка: поле ввода телефона не найдено!");
+    }
+  };
+
+  // Инициализация маски для всех существующих полей
+  const phoneInputs = document.querySelectorAll("input[type='tel']");
+  phoneInputs.forEach(applyPhoneMask);
+
+  // Повторная инициализация маски при открытии модального окна
+  const modal = document.getElementById("modalCalForm");
+  if (modal) {
+    modal.addEventListener("show", function () {
+      const modalPhoneInput = modal.querySelector("input[type='tel']");
+      applyPhoneMask(modalPhoneInput);
+    });
   }
 });

@@ -1,25 +1,40 @@
-// Получить модальное окно
-var modal = document.getElementById("modalCalForm");
+const modalCalForm = document.getElementById("modalCalForm");
+const modalPolicy = document.getElementById("modalPolicy");
 
-// Получить кнопку, которая открывает модальное окно
-var btn = document.getElementById("openModalBtn");
+// Кнопки открытия модальных окон
+const openModalPhoneButtons = document.querySelectorAll("#openModalPhone");
+const policyLinks = document.querySelectorAll(".policy");
 
-// Получить элемент <span>, который закрывает модальное окно
-var span = document.getElementsByClassName("close")[0];
+// Кнопки закрытия модальных окон
+const closeButtons = document.querySelectorAll(".modal .close");
 
-// Когда пользователь нажимает на кнопку, открыть модальное окно
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+// Открытие модального окна "Заказать звонок"
+openModalPhoneButtons.forEach((btn) => {
+  btn.onclick = function () {
+    modalCalForm.style.display = "block";
+  };
+});
 
-// Когда пользователь нажимает на <span> (x), закрыть модальное окно
-span.onclick = function() {
-  modal.style.display = "none";
-}
+// Открытие модального окна политики конфиденциальности
+policyLinks.forEach((link) => {
+  link.onclick = function () {
+    modalPolicy.style.display = "block";
+  };
+});
 
-// Когда пользователь нажимает в любом месте за пределами модального окна, закрыть его
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+// Закрытие модальных окон при нажатии на кнопку "Закрыть"
+closeButtons.forEach((closeButton) => {
+  closeButton.onclick = function () {
+    const modal = closeButton.closest(".modal");
+    if (modal) {
+      modal.style.display = "none";
+    }
+  };
+});
+
+// Закрытие модальных окон при клике вне их содержимого
+window.onclick = function (event) {
+  if (event.target.classList.contains("modal")) {
+    event.target.style.display = "none";
   }
-}
+};

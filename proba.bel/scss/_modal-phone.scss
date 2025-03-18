@@ -39,14 +39,30 @@
             }
 
             span {
-                border: solid 2px rgba(213, 216, 217, 1);
-            }
-        }
+                border: solid 2px $white; // Оставляем рамку светлой
+                border-color: $black; // Черная рамка для чекбокса
 
-        button{
-             width: 282px;
-        height: 64px;
+                &::before {
+                    border-right-color: $black; // Черная галочка
+                    border-bottom-color: $black;
+                }
+            }
+
+            input:checked+span::before {
+                border-right-color: $black; // Черная галочка при активном состоянии
+                border-bottom-color: $black;
+            }
+
+            input::placeholder {
+                color: $black;
+                opacity: 1;
+            }
+
         }
     }
 
+    button {
+        width: 282px;
+        height: 64px;
+    }
 }
