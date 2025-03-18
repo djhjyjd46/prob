@@ -1,146 +1,158 @@
 .hero {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 88px);
+  position: relative;
+  overflow: hidden;
+  background-color: $white;
+  margin-bottom: 64px;
+
+  @media (max-width: 700px) {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 360px) {
+    max-height: 644px;
+  }
+
+
+  // Фоновое изображение на заднем плане
+  &__bg-image {
+    display: flex;
+    width: 360px;
+    height: 100%;
+    align-items: flex-start;
+
+    @media (max-width: 700px) {
+      display: none;
+    }
+
+    width: 360px;
+    height: 100%;
+
+    img {
+      max-height: 100%;
+      object-fit: contain;
+
+    }
+
+  }
+
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  // Контейнер для слайдера
+  .swiper-container {
+    width: 100%;
+  }
+
+  // Стили для слайдов
+  &__slide {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    height: calc(100vh - 88px);
-    position: relative;
-    overflow: hidden;
-    background-color: $white;
-    margin-bottom: 64px;
+    height: 100%;
+  }
+
+  // Контейнер для содержимого слайда
+  &__content {
+    height:100vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 400px) {
+      margin-top: 20px;
+    }
+
     @media (max-width: 700px) {
-        height: 100%;
-      display: flex;
       flex-direction: column;
-    }
-    @media (max-width: 360px) {
-      max-height: 644px;
-    }
-
-
-    // Фоновое изображение на заднем плане
-    &__bg-image {
-        @media (max-width: 700px) {
-          display: none;
-        }
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            max-height: 100%;
-            width: auto;
-            object-fit: contain;
-        }
+      align-items: unset;
+      margin-top: 0;
 
     }
 
+    @media (max-width: 1220px) {
+      margin-top: 30px;
+    }
+  }
 
-    .swiper {
-        width: 100%;
-        height: 100%;
+
+
+  // Стили для изображения в слайде
+  &__image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+
+      @media (max-width: 390px) {
+        max-height: 644px;
+        max-width: 360px;
+      }
+    }
+  }
+
+  .swiper-slide img {
+    height: auto;
+  }
+
+  .hero__text-block {
+    height: auto;
+    // margin-left: 111px;
+    max-width: 688px;
+
+    @media (max-width: 390px) {
+
+      h2,
+      p {
+        margin-bottom: 20px;
+      }
     }
 
-    // Контейнер для слайдера
-    .swiper-container {
-        width: 100%;
+    @media (max-width: 700px) {
+      margin-left: 0;
+      padding: 10px;
+
     }
+  }
 
-    // Стили для слайдов
-    &__slide {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
+  // Стили для пагинации (точек)
+  .swiper-pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    background: transparent;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    svg circle {
+      opacity: 1;
     }
-
-    // Контейнер для содержимого слайда
-    &__content {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: 100%;
-        margin: 0 auto;
-        @media (max-width: 400px) {
-            margin-top: 20px;
-        }
-        @media (max-width: 700px) {
-          flex-direction: column;
-          align-items: unset;
-          margin-top: 0;
-
-        }
-        @media (max-width: 1220px) {
-          margin-top: 30px;
-        }
-    }
-
-
-
-    // Стили для изображения в слайде
-    &__image {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-
-        img {
-            max-width: 100%;
-            height: auto;
-            object-fit: contain;
-            @media (max-width: 390px) {
-              max-height: 644px;
-              max-width: 360px;
-            }
-        }
-    }
-
-    .swiper-slide img {
-        height: auto;
-    }
-
-    .hero__text-block {
-        height: auto;
-        margin-left: 111px;
-        @media (max-width: 390px) {
-          h2,p{
-            margin-bottom: 20px;
-          }
-        }
-        @media (max-width: 700px) {
-            margin-left: 0;
-            padding: 10px ;
-
-          }
-    }
-
-    // Стили для пагинации (точек)
-    .swiper-pagination {
-        position: absolute;
-        bottom: 20px;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .swiper-pagination-bullet {
-        width: 20px;
-        height: 20px;
-        margin: 0 5px;
-        background: transparent;
-        opacity: 1;
-    }
-
-    .swiper-pagination-bullet-active {
-        svg circle {
-            opacity: 1;
-        }
-    }
+  }
 }

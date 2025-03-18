@@ -51,6 +51,12 @@ p {
     font-size: 16px;
   }
 }
+a{
+  transition: 0.3s  ease-in-out,;
+  &:hover{
+    color: $hover-green;
+  }
+}
 
 $desktop-above: 1281px;
 $desktop: 1280px;
