@@ -64,15 +64,21 @@
   // Стили для слайдов
   &__slide {
     display: flex;
-    align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
   }
+@media (min-width: 700px) {
+   .img-center {
+    display: flex;
+    align-items: center;
+  }
+}
+ 
 
   // Контейнер для содержимого слайда
   &__content {
-    height:100vh;
+    height: auto;
 
     display: flex;
     justify-content: space-between;
