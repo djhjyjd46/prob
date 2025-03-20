@@ -5,10 +5,9 @@
     width: 100%;
     height: 737px;
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
     color: $white;
-
     @media (max-width: 400px) {
         background-image: url('/proba.bel/images/work-mobilebg.png');
         min-height: 1900px;
