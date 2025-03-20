@@ -551,6 +551,7 @@ button, input, textarea {
 @media (max-width: 767px) {
   .header {
     padding-inline: 10px;
+    height: 48px;
   }
 }
 .header .mob-inner {
@@ -878,6 +879,7 @@ button:hover {
 }
 @media (max-width: 700px) {
   .hero .slide-box {
+    align-items: unset;
     flex-direction: column;
   }
 }
@@ -943,10 +945,13 @@ button:hover {
   font-size: 24px;
 }
 @media (max-width: 390px) {
-  .hero .hero__text-block h2,
-  .hero .hero__text-block p {
+  .hero .hero__text-block h2 {
     margin-bottom: 20px;
     font-size: 24px;
+  }
+  .hero .hero__text-block p {
+    margin-bottom: 20px;
+    font-size: 16px;
   }
 }
 @media (max-width: 700px) {
