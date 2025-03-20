@@ -43,3 +43,15 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 100%;
+        padding: 20px;
+        top: 10vh;
+    }
+
+    .close {
+        font-size: 24px;
+    }
+}
