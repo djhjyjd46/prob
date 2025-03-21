@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proba.bel</title>
     <link rel="stylesheet" href="./js/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
 </head>
 
@@ -24,12 +24,12 @@
                 </div>
                 <div class="mob-inner">
                     <div class="header__mob-phone visible-mobile">
-                        <a type="tel" href="tel:+37529000000"> <svg width="32" height="32" viewBox="0 0 32 32"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M24.8333 26C22.5185 26 20.2315 25.4956 17.9722 24.4867C15.713 23.4778 13.6574 22.047 11.8056 20.1944C9.9537 18.3419 8.52333 16.2863 7.51444 14.0278C6.50556 11.7693 6.00074 9.48222 6 7.16667C6 6.83333 6.11111 6.55556 6.33333 6.33333C6.55556 6.11111 6.83333 6 7.16667 6H11.6667C11.9259 6 12.1574 6.08815 12.3611 6.26444C12.5648 6.44074 12.6852 6.64889 12.7222 6.88889L13.4444 10.7778C13.4815 11.0741 13.4722 11.3241 13.4167 11.5278C13.3611 11.7315 13.2593 11.9074 13.1111 12.0556L10.4167 14.7778C10.787 15.463 11.2267 16.1248 11.7356 16.7633C12.2444 17.4019 12.8048 18.0178 13.4167 18.6111C13.9907 19.1852 14.5926 19.7178 15.2222 20.2089C15.8519 20.7 16.5185 21.1489 17.2222 21.5556L19.8333 18.9444C20 18.7778 20.2178 18.653 20.4867 18.57C20.7556 18.487 21.0193 18.4637 21.2778 18.5L25.1111 19.2778C25.3704 19.3519 25.5833 19.4863 25.75 19.6811C25.9167 19.8759 26 20.0933 26 20.3333V24.8333C26 25.1667 25.8889 25.4444 25.6667 25.6667C25.4444 25.8889 25.1667 26 24.8333 26Z"
-                                    fill="#599D86" />
-                            </svg></a>
+                        <a type="tel" href="tel:+37529000000"> 
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.8333 26C22.5185 26 20.2315 25.4956 17.9722 24.4867C15.713 23.4778 13.6574 22.047 11.8056 20.1944C9.9537 18.3419 8.52333 16.2863 7.51444 14.0278C6.50556 11.7693 6.00074 9.48222 6 7.16667C6 6.83333 6.11111 6.55556 6.33333 6.33333C6.55556 6.11111 6.83333 6 7.16667 6H11.6667C11.9259 6 12.1574 6.08815 12.3611 6.26444C12.5648 6.44074 12.6852 6.64889 12.7222 6.88889L13.4444 10.7778C13.4815 11.0741 13.4722 11.3241 13.4167 11.5278C13.3611 11.7315 13.2593 11.9074 13.1111 12.0556L10.4167 14.7778C10.787 15.463 11.2267 16.1248 11.7356 16.7633C12.2444 17.4019 12.8048 18.0178 13.4167 18.6111C13.9907 19.1852 14.5926 19.7178 15.2222 20.2089C15.8519 20.7 16.5185 21.1489 17.2222 21.5556L19.8333 18.9444C20 18.7778 20.2178 18.653 20.4867 18.57C20.7556 18.487 21.0193 18.4637 21.2778 18.5L25.1111 19.2778C25.3704 19.3519 25.5833 19.4863 25.75 19.6811C25.9167 19.8759 26 20.0933 26 20.3333V24.8333C26 25.1667 25.8889 25.4444 25.6667 25.6667C25.4444 25.8889 25.1667 26 24.8333 26Z" fill="#599D86"/>
+                                </svg>
+                                
+                        </a>
                     </div>
 
                     <button class="header__burger-button burger-button visible-mobile" type="button"
@@ -38,9 +38,12 @@
                     </button>
                     <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
                         <form class="mobile-overlay__close-button-wrapper" method="dialog">
+                            <div class="mobileheader">
+                            <img src="./images/logo-mobile.png" alt="logo" >
                             <button class="mobile-overlay__close-button cross-button" type="submit">
                                 <span class="visually-hidden">Close navigation menu</span>
                             </button>
+                        </div>
                         </form>
                         <div class="mobile-overlay__body">
 
@@ -848,7 +851,7 @@
         </div>
     </div>
         <!-- Модальное окно политики -->
-        <div class="modal" id="modalPolicy">
+        <div class="modal modal-policy" id="modalPolicy">
             <div class="modal-content">
                 <span class="close">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -863,10 +866,14 @@
                         </defs>
                     </svg>
                 </span>
-                <div class="modal-policy">
-                    <h2>Заказать звонок</h2>
-                    <p>Оставьте Ваши контакты и наши специалисты свяжутся с вами</p>
-                </div>
+                .
+                <h2>Политика конфенденциальности</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem placeat vel aut nulla beatae, rerum nemo deleniti libero dolore nostrum, sunt ab voluptatum officiis voluptatibus rem similique. Illo, odio illum.
+                </p>
+            </div>
+           
+              
             </div>
         </div>
             <!-- Модальное окно -->

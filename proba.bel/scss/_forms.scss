@@ -39,8 +39,9 @@
             color: $black;
             font-size: 18px;
             padding: 20px;
+
             @media (max-width: 400px) {
-                max-width: unset;
+                max-width: 100%;
                 width: 100%;
             }
         }

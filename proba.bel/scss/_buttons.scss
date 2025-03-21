@@ -11,6 +11,9 @@ button {
 
 &:hover {
     background-color: $hover-green;
-} 
+}
+ @media (max-width: 420px) {
+  width: 100%;
+}
   
 }
