@@ -20,6 +20,7 @@
 
         @media (max-width: 400px) {
             margin-bottom: 40px;
+            text-align: left;
         }
     }
 
@@ -42,7 +43,7 @@
 
         .result__item {
             h3 {
-                font-size: 24px;
+                font-size: 20px;
                 margin-bottom: 12px;
             }
 
@@ -81,6 +82,7 @@
 
                 @media (max-width: 390px) {
                     height: auto;
+                    width: auto;
                 }
             }
 

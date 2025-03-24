@@ -1112,7 +1112,6 @@ button:hover {
 @media (max-width: 400px) {
   .result h2 {
     margin-bottom: 40px;
-    text-align: left;
   }
 }
 .result .result__grid {
@@ -1138,7 +1137,7 @@ button:hover {
   max-width: 320px;
 }
 .result .result__grid .result__item h3 {
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 12px;
 }
 .result .result__grid .result__item span {
@@ -1171,7 +1170,6 @@ button:hover {
 @media (max-width: 390px) {
   .result .result__grid div:nth-child(3) img {
     height: auto;
-    width: auto;
   }
 }
 .result .result__grid .result__item:nth-child(1) {
@@ -1296,11 +1294,6 @@ button:hover {
     margin-bottom: 107px;
   }
 }
-@media (max-width: 400px) {
-  .know p {
-    text-align: center;
-  }
-}
 .know h2 {
   text-align: center;
   margin-bottom: 137px;
@@ -1406,7 +1399,7 @@ button:hover {
 .faq__accordion details .faq__content {
   font-size: 18px;
 }
-@media (max-width: 400px) {
+@media (max-width: 390px) {
   .faq__accordion details .faq__content {
     font-size: 14px;
     opacity: 0.7;
@@ -1463,7 +1456,7 @@ button:hover {
 }
 .work__line-mob {
   position: absolute;
-  top: 162px;
+  top: 128px;
 }
 .work__list div {
   display: flex;
