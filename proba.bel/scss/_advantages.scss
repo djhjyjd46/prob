@@ -41,7 +41,7 @@
         width: 100%;
         padding: 30px 0 0;
         @media (max-width: 400px) {
-        padding: 40px 0 0;
+        padding: 40px 0 50px;
           
         }
     }
@@ -54,6 +54,28 @@
         display: flex;
         justify-content: center;   
         flex-direction: column;
+    }
+    .swiper-pagination {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background-color: $green;
+        opacity: 0.2;
+        border-radius: 50%;
+        margin: 0 5px;
+        transition: opacity 0.3s;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background-color: $green;
+        opacity: 1;
     }
 
     &__card {

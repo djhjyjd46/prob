@@ -1,10 +1,13 @@
 const modalCalForm = document.getElementById("modalCalForm");
 const modalPolicy = document.getElementById("modalPolicy");
 const modalThnx = document.getElementById("modalThnx");
+const modalCoocie = document.getElementById("modalCoocie");
 
 // Кнопки открытия модальных окон
 const openModalPhoneButtons = document.querySelectorAll("#openModalPhone");
 const policyLinks = document.querySelectorAll(".policy");
+const policyCoocie = document.querySelectorAll(".policy-coocie");
+
 
 // Кнопки закрытия модальных окон
 const closeButtons = document.querySelectorAll(".modal .close");
@@ -20,6 +23,11 @@ openModalPhoneButtons.forEach((btn) => {
 policyLinks.forEach((link) => {
   link.onclick = function () {
     modalPolicy.style.display = "block";
+  };
+});
+policyCoocie.forEach((link) => {
+  link.onclick = function () {
+    modalCoocie.style.display = "block";
   };
 });
 
@@ -60,3 +68,22 @@ const closeThnxButton = modalThnx.querySelector("button.close-thnx");
 closeThnxButton.onclick = function () {
   modalThnx.style.display = "none";
 };
+
+// Показать/скрыть кнопку
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop >100) {
+      document.getElementById("scrollToTopBtn").style.display = "flex";
+  } else {
+      document.getElementById("scrollToTopBtn").style.display = "none";
+  }
+}
+
+// Функция для прокрутки вверх
+function scrollToTop() {
+  document.body.scrollTop = 0; // Для Safari
+  document.documentElement.scrollTop = 0; // Для Chrome, Firefox, IE и Opera
+}

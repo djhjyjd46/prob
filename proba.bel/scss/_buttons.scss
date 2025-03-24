@@ -17,3 +17,32 @@ button {
 }
   
 }
+#scrollToTopBtn {  
+
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: $green;
+    color: $white;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    transition: all 0.3s ease-in-out;
+    @media (max-width: 400px) {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+#scrollToTopBtn:hover {
+    // background-color: $hover-green;
+}
