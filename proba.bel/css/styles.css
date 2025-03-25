@@ -426,6 +426,7 @@ template {
     min-height: 1187px;
     padding-top: 0;
     padding: 48px 0;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 400px) {
@@ -630,6 +631,33 @@ button:hover {
   }
 }
 
+#scrollToTopBtn {
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(89, 157, 134);
+  color: rgb(247, 250, 249);
+  cursor: pointer;
+  padding: 0;
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 400px) {
+  #scrollToTopBtn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .contact-form {
   height: 437px;
   background-image: url("../images/form-bg.png");
@@ -756,6 +784,9 @@ button:hover {
   flex-direction: column;
   gap: 16px;
 }
+.footer .container .footer__logo .footer__links a {
+  cursor: pointer;
+}
 @media (max-width: 400px) {
   .footer .container .footer__logo .footer__links {
     position: absolute;
@@ -846,7 +877,7 @@ button:hover {
 }
 @media (max-width: 700px) {
   .hero {
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
   }
@@ -992,6 +1023,12 @@ button:hover {
   background: transparent;
   opacity: 1;
 }
+@media (max-width: 420px) {
+  .hero .swiper-pagination-bullet svg {
+    width: 12px;
+    height: 12px;
+  }
+}
 .hero .swiper-pagination-bullet-active svg circle {
   opacity: 1;
 }
@@ -1047,7 +1084,7 @@ button:hover {
 }
 @media (max-width: 400px) {
   .advantages .swiper {
-    padding: 40px 0 0;
+    padding: 40px 0 50px;
   }
 }
 .advantages .swiper-wrapper {
@@ -1057,6 +1094,26 @@ button:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.advantages .swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.advantages .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(89, 157, 134);
+  opacity: 0.2;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: opacity 0.3s;
+}
+.advantages .swiper-pagination-bullet-active {
+  background-color: rgb(89, 157, 134);
+  opacity: 1;
 }
 .advantages__card {
   color: rgb(247, 250, 249);
@@ -1112,6 +1169,7 @@ button:hover {
 @media (max-width: 400px) {
   .result h2 {
     margin-bottom: 40px;
+    text-align: left;
   }
 }
 .result .result__grid {
@@ -1137,7 +1195,7 @@ button:hover {
   max-width: 320px;
 }
 .result .result__grid .result__item h3 {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 12px;
 }
 .result .result__grid .result__item span {
@@ -1170,6 +1228,7 @@ button:hover {
 @media (max-width: 390px) {
   .result .result__grid div:nth-child(3) img {
     height: auto;
+    width: auto;
   }
 }
 .result .result__grid .result__item:nth-child(1) {
@@ -1294,6 +1353,11 @@ button:hover {
     margin-bottom: 107px;
   }
 }
+@media (max-width: 400px) {
+  .know p {
+    text-align: center;
+  }
+}
 .know h2 {
   text-align: center;
   margin-bottom: 137px;
@@ -1399,8 +1463,8 @@ button:hover {
 .faq__accordion details .faq__content {
   font-size: 18px;
 }
-@media (max-width: 390px) {
-  .faq__accordion details .faq__content p {
+@media (max-width: 400px) {
+  .faq__accordion details .faq__content {
     font-size: 14px;
     opacity: 0.7;
   }
@@ -1456,7 +1520,7 @@ button:hover {
 }
 .work__line-mob {
   position: absolute;
-  top: 128px;
+  top: 162px;
 }
 .work__list div {
   display: flex;
@@ -1689,10 +1753,6 @@ button:hover {
   height: 64px;
 }
 
-.modal-policy .modal-content {
-  width: 800px;
-}
-
 .visually-hidden {
   position: absolute !important;
   width: 1px !important;
@@ -1779,7 +1839,7 @@ button:hover {
 .mobile-overlay__list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
   justify-content: left;
   margin-bottom: 40px;
 }
