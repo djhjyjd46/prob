@@ -66,7 +66,7 @@ body {
   margin: 0 auto;
   padding: 0;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .container {
     padding: 10px;
     display: flex;
@@ -90,13 +90,13 @@ h2 {
   font-size: 40px;
   line-height: 140%;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   h2 {
     font-size: 24px;
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 700px) {
   p {
     font-size: 16px;
   }
@@ -420,7 +420,7 @@ template {
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .exam {
     background-image: url("../images/exam-mobilebg.png");
     min-height: 1187px;
@@ -429,7 +429,7 @@ template {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .exam .container {
     display: flex;
     flex-direction: column;
@@ -441,12 +441,13 @@ template {
   max-width: 662px;
   margin-bottom: 20px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .exam h2 {
     margin-bottom: 20px;
   }
 }
 .exam img {
+  position: absolute;
   width: 312px;
   height: 312px;
   border-radius: 50%;
@@ -455,10 +456,10 @@ template {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  bottom: 49px;
 }
-@media (min-width: 400px) {
+@media (min-width: 700px) {
   .exam img {
-    position: absolute;
     top: 133px;
     right: 208px;
     width: 650px;
@@ -468,7 +469,7 @@ template {
 .exam p {
   color: rgb(247, 250, 249);
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .exam p {
     margin-bottom: 107px;
   }
@@ -484,7 +485,7 @@ template {
   gap: 30px;
   margin-bottom: 30px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .exam ul {
     border-radius: 24px;
     margin-bottom: 24px;
@@ -496,7 +497,7 @@ template {
   gap: 16px;
   align-items: center;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .exam ul li svg {
     min-width: 24px;
     max-width: 24px;
@@ -564,7 +565,7 @@ button, input, textarea {
   width: 100%;
   justify-content: space-between;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .header__top {
     margin-bottom: 2px;
     padding-inline: 10px;
@@ -575,7 +576,7 @@ button, input, textarea {
   height: 42px;
   width: 191px;
 }
-@media (max-width: 390px) {
+@media (max-width: 700px) {
   .header .logo {
     height: 32px;
     width: 144px;
@@ -660,7 +661,7 @@ button:hover {
   transform: rotate(-90deg);
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   #scrollToTopBtn {
     width: 40px;
     height: 40px;
@@ -675,7 +676,7 @@ button:hover {
   color: rgb(247, 250, 249);
   padding: 88px 0 63px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .contact-form {
     height: auto;
     padding: 37px 0 10px;
@@ -696,7 +697,7 @@ button:hover {
     flex-wrap: wrap;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .contact-form form {
     flex-direction: column;
   }
@@ -710,7 +711,7 @@ button:hover {
   font-size: 18px;
   padding: 20px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .contact-form form input {
     max-width: 100%;
     width: 100%;
@@ -720,7 +721,7 @@ button:hover {
   width: 282px;
   height: 64px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .contact-form form button {
     width: 100%;
   }
@@ -742,7 +743,7 @@ button:hover {
   background-color: rgb(51, 51, 51);
   color: rgb(247, 250, 249);
 }
-@media (max-width: 390px) {
+@media (max-width: 700px) {
   .footer {
     font-weight: 300;
     padding: 38px 0;
@@ -753,7 +754,7 @@ button:hover {
   font-size: 24px;
   margin-bottom: 7px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .footer h3 {
     font-size: 20px;
     color: rgb(162, 192, 128);
@@ -762,7 +763,7 @@ button:hover {
 .footer .footer__info {
   font-size: 14px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .footer .footer__info {
     margin-bottom: 32px;
   }
@@ -771,7 +772,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .footer .container {
     flex-direction: column;
     align-items: flex-start;
@@ -796,7 +797,7 @@ button:hover {
 .footer .container .footer__logo .footer__links a {
   cursor: pointer;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .footer .container .footer__logo .footer__links {
     position: absolute;
     bottom: 28px;
@@ -808,7 +809,7 @@ button:hover {
   gap: 40px;
   font-size: 18px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .footer .container .footer__menu {
     font-weight: 300;
     font-size: 16px;
@@ -821,7 +822,7 @@ button:hover {
   flex-direction: column;
   gap: 17px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .footer .container .footer__menu div {
     flex-direction: row;
     flex-wrap: wrap;
@@ -836,7 +837,7 @@ button:hover {
   flex-direction: column;
   gap: 40px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .footer .container .footer__contacts {
     margin-bottom: 35px;
   }
@@ -853,7 +854,7 @@ button:hover {
 .footer .container .footer__contacts .tel {
   gap: 20px;
 }
-@media (max-width: 390px) {
+@media (max-width: 700px) {
   .footer .container .footer__contacts .tel {
     font-size: 18px;
   }
@@ -866,7 +867,7 @@ button:hover {
 .footer .container .footer__contacts .mess {
   gap: 8px;
 }
-@media (max-width: 390px) {
+@media (max-width: 700px) {
   .footer .container .footer__contacts .mess {
     font-size: 18px;
   }
@@ -896,8 +897,9 @@ button:hover {
     flex-direction: column;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 770px) {
   .hero {
+    height: 90vh;
     max-height: 644px;
   }
 }
@@ -958,7 +960,7 @@ button:hover {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .hero__content {
     margin-top: 20px;
   }
@@ -986,9 +988,9 @@ button:hover {
   -o-object-fit: contain;
      object-fit: contain;
 }
-@media (max-width: 390px) {
+@media (max-width: 700px) {
   .hero__image img {
-    max-height: 644px;
+    height: 644px;
     max-width: 360px;
   }
 }
@@ -1002,7 +1004,7 @@ button:hover {
 .hero .hero__text-block h2 {
   font-size: 48px;
 }
-@media (max-width: 420px) {
+@media (max-width: 700px) {
   .hero .hero__text-block h2 {
     margin-bottom: 20px;
     font-size: 24px;
@@ -1011,7 +1013,7 @@ button:hover {
 .hero .hero__text-block p {
   font-size: 24px;
 }
-@media (max-width: 420px) {
+@media (max-width: 700px) {
   .hero .hero__text-block p {
     margin-bottom: 20px;
     font-size: 16px;
@@ -1039,7 +1041,7 @@ button:hover {
   background: transparent;
   opacity: 1;
 }
-@media (max-width: 420px) {
+@media (max-width: 700px) {
   .hero .swiper-pagination-bullet svg {
     width: 12px;
     height: 12px;
@@ -1065,7 +1067,7 @@ button:hover {
   background-repeat: no-repeat;
   margin-bottom: 64px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .advantages {
     background-size: 251px auto, 226px auto;
     min-height: 790px;
@@ -1085,7 +1087,7 @@ button:hover {
   max-width: 537px;
   text-align: center;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .advantages h2 {
     margin-bottom: 22px;
   }
@@ -1098,7 +1100,7 @@ button:hover {
   width: 100%;
   padding: 30px 0 0;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .advantages .swiper {
     padding: 40px 0 50px;
   }
@@ -1156,7 +1158,7 @@ button:hover {
   background-position: center;
   transform: translate(-50%, -50%);
 }
-@media (max-width: 390px) {
+@media (max-width: 700px) {
   .advantages__card img {
     min-width: 96px;
     min-height: 96px;
@@ -1167,7 +1169,7 @@ button:hover {
   position: relative;
   margin-bottom: 129px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .result {
     margin-bottom: 38px;
   }
@@ -1182,7 +1184,7 @@ button:hover {
   text-align: center;
   margin-bottom: 114px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .result h2 {
     margin-bottom: 40px;
     text-align: left;
@@ -1198,7 +1200,7 @@ button:hover {
   max-width: 1200px;
   margin: 0 auto;
 }
-@media (max-width: 410px) {
+@media (max-width: 700px) {
   .result .result__grid {
     display: flex;
     flex-direction: column;
@@ -1241,10 +1243,10 @@ button:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (max-width: 390px) {
+@media (max-width: 700px) {
   .result .result__grid div:nth-child(3) img {
     height: auto;
-    width: auto;
+    width: 100%;
   }
 }
 .result .result__grid .result__item:nth-child(1) {
@@ -1277,7 +1279,7 @@ button:hover {
   overflow: hidden;
   margin-bottom: 64px;
 }
-@media (max-width: 420px) {
+@media (max-width: 700px) {
   .indications {
     height: auto;
     margin-bottom: 0px;
@@ -1286,7 +1288,7 @@ button:hover {
 .indications h2 {
   margin-bottom: 138px;
 }
-@media (max-width: 390px) {
+@media (max-width: 700px) {
   .indications h2 {
     margin-bottom: 40px;
     margin-top: 100px;
@@ -1307,7 +1309,7 @@ button:hover {
   z-index: -1;
   opacity: 0.9;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .indications::before {
     background-image: url("../images/bg-indicator.png");
     background-position: top right;
@@ -1325,14 +1327,15 @@ button:hover {
   gap: 24px;
   margin-bottom: 40px;
 }
-@media (max-width: 390px) {
+@media (max-width: 700px) {
   .indications__list {
     flex-direction: column;
+    width: 100%;
   }
 }
 .indications__list li {
   display: flex;
-  max-width: 371px;
+  width: 371px;
   padding: 32px 24px;
   flex: 1 1 calc(33.333% - 24px);
   height: 154px;
@@ -1343,6 +1346,11 @@ button:hover {
   justify-content: space-between;
   background-color: rgb(247, 250, 249);
 }
+@media (max-width: 700px) {
+  .indications__list li {
+    width: 100%;
+  }
+}
 .indications__list li span {
   font-size: 20px;
   color: rgb(89, 157, 134);
@@ -1350,7 +1358,7 @@ button:hover {
 .indications p {
   font-size: 18px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .indications p {
     font-size: 16px;
   }
@@ -1359,7 +1367,7 @@ button:hover {
 .know {
   margin-bottom: 64px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .know {
     padding: 40px 0 0;
     background-image: url("../images/know-bg.png");
@@ -1369,7 +1377,7 @@ button:hover {
     margin-bottom: 107px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .know p {
     text-align: center;
   }
@@ -1378,7 +1386,7 @@ button:hover {
   text-align: center;
   margin-bottom: 137px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .know h2 {
     margin-bottom: 40px;
   }
@@ -1392,7 +1400,7 @@ button:hover {
   align-items: center;
   padding-bottom: 5px;
 }
-@media (max-width: 410px) {
+@media (max-width: 700px) {
   .know__grid {
     display: flex;
     flex-direction: column;
@@ -1405,7 +1413,7 @@ button:hover {
   align-items: start;
   gap: 12px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .know__grid div {
     align-items: center;
   }
@@ -1428,7 +1436,7 @@ button:hover {
   max-height: 744px;
   margin-bottom: 64px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .faq {
     max-height: unset;
     height: auto;
@@ -1439,7 +1447,7 @@ button:hover {
   margin-top: 110px;
   margin-bottom: 77px;
 }
-@media (max-width: 390px) {
+@media (max-width: 700px) {
   .faq h2 {
     margin-top: 54px;
     margin-bottom: 40px;
@@ -1479,7 +1487,7 @@ button:hover {
 .faq__accordion details .faq__content {
   font-size: 18px;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .faq__accordion details .faq__content {
     font-size: 14px;
     opacity: 0.7;
@@ -1500,14 +1508,14 @@ button:hover {
   background-position: center;
   color: rgb(247, 250, 249);
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .work {
     background-image: url("../images/work-mobilebg.png");
     min-height: 1900px;
     padding: 10px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .work .container {
     padding: 40px 10px;
   }
@@ -1517,7 +1525,7 @@ button:hover {
   width: 100%;
   height: 737px;
 }
-@media (max-width: 410px) {
+@media (max-width: 710px) {
   .work__list {
     display: flex;
     flex-direction: column;
@@ -1546,7 +1554,7 @@ button:hover {
   height: auto;
   text-align: center;
 }
-@media (min-width: 400px) {
+@media (min-width: 700px) {
   .work__list div {
     position: absolute;
     max-width: 262px;
@@ -1562,7 +1570,7 @@ button:hover {
   width: auto;
   height: auto;
 }
-@media (min-width: 400px) {
+@media (min-width: 700px) {
   .work__list div:nth-child(1) {
     top: 15%;
     left: 0;
@@ -1608,7 +1616,7 @@ button:hover {
   position: relative;
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .custom-checkbox span {
     width: 80px;
   }
