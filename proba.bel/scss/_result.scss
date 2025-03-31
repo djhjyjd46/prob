@@ -2,7 +2,7 @@
     position: relative;
     margin-bottom: 129px;
 
-    @media (max-width: 400px) {
+    @media (max-width: 700px) {
         margin-bottom: 38px;
     }
 
@@ -18,14 +18,14 @@
         text-align: center;
         margin-bottom: 114px;
 
-        @media (max-width: 400px) {
+        @media (max-width: 700px) {
             margin-bottom: 40px;
             text-align: left;
         }
     }
 
     .result__grid {
-        @media (max-width: 410px) {
+        @media (max-width: 700px) {
             display: flex;
             flex-direction: column;
             gap: 40px;
@@ -80,9 +80,9 @@
                 height: 516px;
                 object-fit: cover;
 
-                @media (max-width: 390px) {
+                @media (max-width: 700px) {
                     height: auto;
-                    width: auto;
+                    width: 100%;
                 }
             }
 

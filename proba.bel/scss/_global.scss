@@ -17,7 +17,7 @@ body {
   margin: 0 auto;
   padding: 0;
 
-  @media (max-width: 400px) {
+  @media (max-width: 700px) {
     padding: 10px;
     display: flex;
     align-items: center;
@@ -41,13 +41,13 @@ h2 {
   font-size: 40px;
   line-height: 140%;
 
-  @media (max-width: 400px) {
+  @media (max-width: 700px) {
     font-size: 24px;
   }
 }
 
 p {
-  @media (max-width: 390px) {
+  @media (max-width: 700px) {
     font-size: 16px;
   }
 }

@@ -6,7 +6,7 @@
     color: $white;
     padding: 88px 0 63px;
 
-    @media (max-width: 400px) {
+    @media (max-width: 700px) {
         height: auto;
         padding: 37px 0 10px;
     }
@@ -24,7 +24,7 @@
             flex-wrap: wrap;
         }
 
-        @media (max-width: 400px) {
+        @media (max-width: 700px) {
             flex-direction: column;
         }
 
@@ -40,7 +40,7 @@
             font-size: 18px;
             padding: 20px;
 
-            @media (max-width: 400px) {
+            @media (max-width: 700px) {
                 max-width: 100%;
                 width: 100%;
             }
@@ -50,7 +50,7 @@
             width: 282px;
             height: 64px;
 
-            @media (max-width: 400px) {
+            @media (max-width: 700px) {
                 width: 100%;
                 
             }
