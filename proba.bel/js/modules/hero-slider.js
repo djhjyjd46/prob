@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 30,
         loop: true,
         autoplay: {
-            delay: 400000,
+            delay: 4000,
             disableOnInteraction: false,
         },
         effect: 'fade',

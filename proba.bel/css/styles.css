@@ -1351,6 +1351,11 @@ button:hover {
     width: 100%;
   }
 }
+@media (min-width: 700px) {
+  .indications__list li {
+    max-width: 32%;
+  }
+}
 .indications__list li span {
   font-size: 20px;
   color: rgb(89, 157, 134);
@@ -1475,7 +1480,7 @@ button:hover {
   align-items: center;
 }
 .faq__accordion details summary span {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 12px;
 }
 .faq__accordion details summary svg {
